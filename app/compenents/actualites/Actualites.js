@@ -11,17 +11,17 @@ const Actualites = () => {
     const [showModal, setShowModal] = useState(false);
     const [over, setOver] = useState(false);
     return (
-        <div className='flex flex-col items-center min-h-screen gap-8 px-2 py-20 overflow-hidden bg-greybeige md:py-40'>
+        <div className='flex flex-col items-center min-h-screen gap-8 px-10 py-20 overflow-hidden bg-greybeige md:py-40 '>
             <div className='flex gap-2'>
                 <Logo />
                 <h1 className='text-xl font-semibold text-dark-brown font-lato'>COTES ENVIRONNEMENTS</h1>
             </div>
 
-            <div className='w-2/3 md:w-2/4 font-lato font-semibold text-lg md:text-[2vw]  text-dark-brown text-center'>
+            <div className=' md:w-2/4 font-lato font-semibold text-lg md:text-[2vw]  text-dark-brown text-center'>
                 <p className=''>
-                    Que vous soyez Particulier, Promoteur Immobilier, Architecte, Bureau d’Etudes ou Entreprise,
+                    Que vous soyez Particulier, Promoteur Immobilier, Architecte, Bureau d’Etudes ou Entreprise, je propose différents types d’ expertises adaptées à vos besoins
                 </p>
-                <p> je propose différents types d’ expertises adaptées à vos besoins.</p>
+
             </div>
             <div className='flex flex-col w-full gap-6 md:gap-4  mt-10 text-white md:flex-row md:px-[10vw]'>
                 <CardBlog title="COTES" description="Charming modular wood houses, fit to your dreams." img="/woodHome.jpg" showModal={showModal} setShowModal={setShowModal} />
