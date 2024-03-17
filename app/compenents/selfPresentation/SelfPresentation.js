@@ -6,7 +6,7 @@ import DrawParalax from './DrawParalax'
 
 const SelfPresentation = () => {
     return (
-        <div className='py-10  md:py-40 bg-light-brown'>
+        <div className='py-10 overflow-hidden md:py-40 bg-light-brown'>
             <ParallaxImages />
 
 

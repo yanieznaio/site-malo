@@ -32,36 +32,36 @@ const Carousel = ({ setShowModal }) => {
     const dragX = useMotionValue(0);
 
 
-    useEffect(() => {
-
-        const intervalRef = setInterval(() => {
-
-            const x = dragX.get();
-
-
-            if (x === 0) {
-
-                setImgIndex((pv) => {
-
-                    if (pv === imgs.length - 1) {
-
-                        return 0;
-
-                    }
-
-                    return pv + 1;
-
-                });
-
-            }
-
-        }, AUTO_DELAY, dragX);
-
-
-        return () => clearInterval(intervalRef);
-
-    }, []);
-
+    /*     useEffect(() => {
+    
+            const intervalRef = setInterval(() => {
+    
+                const x = dragX.get();
+    
+    
+                if (x === 0) {
+    
+                    setImgIndex((pv) => {
+    
+                        if (pv === imgs.length - 1) {
+    
+                            return 0;
+    
+                        }
+    
+                        return pv + 1;
+    
+                    });
+    
+                }
+    
+            }, AUTO_DELAY, dragX);
+    
+    
+            return () => clearInterval(intervalRef);
+    
+        }, []);
+     */
 
     const onDragEnd = () => {
 

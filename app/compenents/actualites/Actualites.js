@@ -11,7 +11,7 @@ const Actualites = () => {
     const [showModal, setShowModal] = useState(false);
     const [over, setOver] = useState(false);
     return (
-        <div className='flex flex-col items-center w-screen min-h-screen gap-8 px-4 py-20 bg-greybeige md:py-40'>
+        <div className='flex flex-col items-center min-h-screen gap-8 px-4 py-20 overflow-hidden bg-greybeige md:py-40'>
             <div className='flex gap-2'>
                 <Logo />
                 <h1 className='text-xl font-semibold text-dark-brown font-lato'>COTES ENVIRONNEMENTS</h1>

@@ -6,7 +6,7 @@ import Actualites from './compenents/actualites/Actualites';
 
 export default function Home() {
   return (
-    <main className="relative w-full bg-light-brown ">
+    <main className="relative w-full overflow-hidden bg-light-brown ">
 
       <Hero />
       <Slider />

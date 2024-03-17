@@ -9,7 +9,7 @@ import StyledLi from './StyledLi';
 import { motion } from "framer-motion"
 const Footer = () => {
     return (
-        <footer className='relative bottom-0 flex flex-col pt-40 pb-8 md:pb-[8vh] bg-dark-brown text-light-brown'>
+        <footer className='relative bottom-0 flex flex-col pt-40 pb-8 md:pb-[8vh] bg-dark-brown text-light-brown  '>
             <div className='flex flex-col-reverse border-b md:flex-row border-light-brown'>
                 <ul className='md:w-4/5 text-4xl md:text-[4vw]  font-playfair  flex flex-col '>
                     <motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div>
