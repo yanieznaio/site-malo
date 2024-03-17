@@ -7,11 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
+        lato: ["Lato", "sans-serif"],
+        ogg: ["Ogg", 'serif'],
+        mori: ["mori", 'sans-serif']
+      },
+      colors: {
+        'argile': '#BD8149',
+        'dark-brown': '#3E362E',
+        'light-brown': '#AB8867',
+        'light-beige': '#F4E4CB',
+        'dark-beige': '#DAC9AD',
+        'black': '#3E362E',
+        'white': '#EAE7DD',
+        'lightgrey': '#DAD1C3',
+        'kaki': '#6C645A',
+        'greybeige': '#E7DECF'
+
+      },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
     },
   },
   plugins: [],
