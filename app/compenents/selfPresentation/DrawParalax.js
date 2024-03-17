@@ -21,7 +21,7 @@ const DrawParalax = () => {
 
                 <motion.div style={{ y: sm }} className=' relative w-[200px] h-[130px] md:w-[400px] md:h-[200px] ml-auto'>
 
-                    <Image src="/draw.png" fill={true} />
+                    <Image src="/draw.png" fill={true} alt='presentation' />
                 </motion.div>
 
             </div>

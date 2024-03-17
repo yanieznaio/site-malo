@@ -55,7 +55,7 @@ const Carousel = ({ setShowModal }) => {
 
             }
 
-        }, AUTO_DELAY);
+        }, AUTO_DELAY, dragX);
 
 
         return () => clearInterval(intervalRef);

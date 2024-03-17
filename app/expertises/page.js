@@ -10,7 +10,7 @@ const page = () => {
                     <div className='w-3/4 md:w-2/4 '>
                         <h3 className='text-lg md:text-2xl font-mori'>COTÉ ENVIRONNEMENT</h3>
                         <div className='relative  h-[200px]  md:h-[30vh]'>
-                            <Image src="/woodHome.jpg" fill={true} />
+                            <Image src="/woodHome.jpg" fill={true} alt='maison' />
                         </div>
                     </div>
                 </div>
