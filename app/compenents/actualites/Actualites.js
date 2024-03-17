@@ -32,8 +32,8 @@ const Actualites = () => {
                     )
                 }
             </div>
-            <div className='mt-40 flex flex-col h-[45vh]  md:flex-row  md:h-auto p-4  rounded-3xl bg-lightgrey gap-4  md:w-[calc(165.067px+29.47vw)]'>
-                <div className='relative h-1/2 md:w-1/3 md:h-auto'>
+            <div className='mt-40 flex flex-col  md:flex-row  h-auto p-4  rounded-3xl bg-lightgrey gap-4  md:w-[calc(165.067px+29.47vw)]'>
+                <div className='relative h-36 md:w-1/3 md:h-auto'>
                     <Image src="/wood.png" alt='bois' fill={true} className='rounded-xl' />
                 </div>
                 <div className='flex flex-col gap-3 px-3 py-5 h-1/2 md:w-2/3 text-dark-brown font-mori'>
