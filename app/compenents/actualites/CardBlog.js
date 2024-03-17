@@ -17,7 +17,7 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
     const [over, setOver] = useState(false);
 
     return (
-        <motion.div style={{ backgroundImage: `url(${img})` }} onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} variants={variants} whileHover="animate" initial="initial" transition={{ duration: 1, type: 'ease' }} className={`cursor-pointer relative  h-[35vh] md:h-[500px]   bg-cover bg-center w-full md:w-1/2
+        <motion.div style={{ backgroundImage: `url(${img})` }} onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} variants={variants} whileHover="animate" initial="initial" transition={{ duration: 1, type: 'ease' }} className={`cursor-pointer relative  h-[40vh] md:h-[500px]   bg-cover bg-center w-full md:w-1/2
         [--width-from:100%] md:[--width-from:50%]
         [--width-to:100%] md:[--width-to:100%]
         `}>

@@ -32,11 +32,11 @@ const Actualites = () => {
                     )
                 }
             </div>
-            <div className='mt-40 flex flex-col  md:flex-row  h-auto p-4  rounded-3xl bg-lightgrey gap-4  md:w-[calc(165.067px+29.47vw)]'>
-                <div className='relative h-40 md:w-1/3 md:h-auto'>
+            <div className='mt-40 flex flex-col h-[45vh]  md:flex-row  md:h-auto p-4  rounded-3xl bg-lightgrey gap-4  md:w-[calc(165.067px+29.47vw)]'>
+                <div className='relative h-1/2 md:w-1/3 md:h-auto'>
                     <Image src="/wood.png" alt='bois' fill={true} className='rounded-xl' />
                 </div>
-                <div className='flex flex-col gap-3 px-3 py-5 md:w-2/3 text-dark-brown font-mori'>
+                <div className='flex flex-col gap-3 px-3 py-5 h-1/2 md:w-2/3 text-dark-brown font-mori'>
                     <h3 className='text-lg md:text-[calc(16.206px+.46vw)] md:tracking-[-0.1em]  '> Besoin de conseils ?</h3>
                     <p className='text-sm md:text-[max(12px,calc(10.791px+.31vw))] font-[400]  leading-[1.3em] md:tracking-tighter text-kaki'>Nous sommes la pour vous accompagner , Prenez Contact afin que nous puissions évaluer, ensemble, vos besoins. </p>
                     <div className='mt-2'>
