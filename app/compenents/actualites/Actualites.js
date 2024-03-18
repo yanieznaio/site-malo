@@ -34,7 +34,7 @@ const Actualites = () => {
             </div>
             <div className='mt-40 flex flex-col  md:flex-row  md:h-auto p-3 md:p-4  h-auto rounded-3xl bg-lightgrey gap-4  md:w-[calc(165.067px+29.47vw)]'>
                 <div className='relative h-[max(62px,calc(62px+22.24vw));] md:w-1/3 md:h-auto'>
-                    <Image src="/wood.png" alt='bois' fill={true} className='rounded-xl' />
+                    <Image src="/wood.png" alt='bois' fill={true} className='object-cover rounded-xl' />
                 </div>
                 <div className='flex flex-col px-3 py-5 pr-2 md:gap-3 h-1/2 md:w-2/3 text-dark-brown font-mori'>
                     <h3 className='text-lg md:text-[calc(16.206px+.46vw)] md:tracking-[-0.1em]  '> Besoin de conseils ?</h3>

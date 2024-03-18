@@ -44,7 +44,7 @@ const ParallaxImages = () => {
             <div className='absolute top-[50vh] md:top-60 left-[5vw] md:left-20'>
                 <motion.div style={{ y: sm }} className='relative  h-[200px] md:h-[60vh] w-[30vw] md:w-[20vw] '>
 
-                    <Image className='' src="/portrait.jpg" fill={true} alt='portrait' />
+                    <Image src="/portrait.jpg" fill={true} alt='portrait' className="object-cover" />
                 </motion.div>
 
             </div>
