@@ -31,7 +31,7 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
         [--width-from:100%] md:[--width-from:50%]
         [--width-to:100%] md:[--width-to:100%]
         `}>
-            <div style={{ backgroundImage: `url(${img})` }} className='w-full h-full bg-center bg-cover brightness-50 '>
+            <div style={{ backgroundImage: `url(${img})` }} className='w-full h-full bg-center bg-cover brightness-75 '>
 
             </div>
             {over &&

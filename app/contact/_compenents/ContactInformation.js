@@ -7,7 +7,7 @@ import { FaClock } from "react-icons/fa";
 import Image from 'next/image';
 const Icon = ({ content, text }) => {
     return (
-        <span className='flex items-center gap-2 text-dark-brown opacity-55 md:text-[1vw]'>
+        <span className='flex items-center gap-2 text-dark-brown opacity-55 text-xs md:text-[1vw]'>
             {content}
             <p>{text}</p>
         </span>
@@ -27,7 +27,7 @@ const ContactInformation = () => {
                 </div>
                 <div className='flex flex-col gap-8 p-10 border md:rounded-r-full md:w-1/2 bg-light-beige'>
                     <h3 className='font-bold text-light-brown md:text-[2vw]'>COTÉ ENVIRONNEMENT</h3>
-                    <div className='flex gap-20'>
+                    <div className='flex gap-10 md:gap-20'>
                         <div className='flex flex-col gap-2'>
                             <Icon content={<FaPhoneAlt />} text="NUMÉRO" />
                             <Icon content={<FaLocationDot />} text="ADRESSE" />
@@ -36,7 +36,7 @@ const ContactInformation = () => {
                             <Icon content={<FaClock />} text="HORAIRES" />
 
                         </div>
-                        <div className='flex flex-col gap-2 font-extralight text-dark-brown md:text-[1vw]'>
+                        <div className='flex flex-col gap-2 font-extralight text-dark-brown text-xs md:text-[1vw]'>
                             <p>07 83 83 39 47</p>
                             <p>Villeurbanne, France</p>
                             <p>malo.orth@gmail.com</p>
