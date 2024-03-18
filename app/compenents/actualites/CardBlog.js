@@ -43,7 +43,7 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
                     <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-12 left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
 
                     <motion.div variants={variantsText} initial="initial" animate="animate" className='absolute right-6 bottom-12  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'>
-                        <button onClick={() => setShowModal(true)} className='px-4 py-2 text-black bg-white rounded-full '>Voir plus</button>
+                        <button onClick={() => setShowModal(true)} className='flex items-center justify-center gap-2 px-4 py-2 text-sm text-black bg-white rounded-full font-playfair '><MdArrowForward className='font-thin opacity-75' />Voir plus</button>
                     </motion.div>
                 </div>
 

@@ -24,8 +24,8 @@ const Actualites = () => {
 
             </div>
             <div className='flex flex-col w-full gap-6 md:gap-4  mt-10 text-white md:flex-row md:px-[10vw]'>
-                <CardBlog title="COTES" description="Charming modular wood houses, fit to your dreams." img="/woodHome.jpg" showModal={showModal} setShowModal={setShowModal} />
-                <CardBlog title="COTES" description="Charming modular wood houses, fit to your dreams." img="/wood.png" showModal={showModal} setShowModal={setShowModal} />
+                <CardBlog title="Actualités" description="RE2020, ce qu'il faut savoir." img="/woodHome.jpg" showModal={showModal} setShowModal={setShowModal} />
+                <CardBlog title="Actualités" description="" img="/wood.png" showModal={showModal} setShowModal={setShowModal} />
                 {
                     showModal && (
                         <Carousel setShowModal={setShowModal} />

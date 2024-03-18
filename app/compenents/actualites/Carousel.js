@@ -4,10 +4,10 @@ import { motion, useMotionValue } from "framer-motion";
 
 
 const imgs = [
-    "/woodHome.jpg",
-    "/wood.png",
-    "/house.png",
-    "/prestation1.jpg",
+    "/repdf.png",
+    "/re2020.png",
+    "/reessentiel.png",
+    "/pdf3.jpg",
     "/prestation2.jpg",
     "/prestation3.jpg",
 
@@ -159,8 +159,9 @@ const Images = ({ imgIndex }) => {
                         style={{
 
                             backgroundImage: `url(${imgSrc})`,
-                            backgroundSize: "cover",
+                            backgroundSize: "contain",
                             backgroundPosition: "center",
+                            backgroundRepeat: 'no-repeat'
 
                         }}
 
@@ -172,7 +173,7 @@ const Images = ({ imgIndex }) => {
 
                         transition={SPRING_OPTIONS}
 
-                        className="object-cover w-full h-[70vh] md:h-full aspect-video shrink-0 rounded-xl bg-neutral-800"
+                        className="object-cover w-full h-[70vh] md:h-full aspect-video shrink-0 rounded-xl "
 
                     />
 
