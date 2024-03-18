@@ -46,7 +46,7 @@ const Card = ({ prestation }) => {
             transition={{ type: 'tween', duration: 0.3 }}
             viewport={{ once: true }}
             onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}
-            className={`${prestation.white == true ? 'md:h-[60vh]' : 'md:h-[55vh]'} h-[400px]  relative flex flex-col gap-2 p-2 md:p-4 pb-10 cursor-pointer bg-light-brown`}
+            className={`${prestation.white == true ? 'md:h-[60vh]' : 'md:h-[55vh]'} h-[320px]  relative flex flex-col gap-2 p-2 md:p-4 pb-10 cursor-pointer bg-light-brown`}
 
         >
             <motion.div variants={variantsText} animate={over ? 'animate' : 'initial'} className='absolute left-0 right-0 z-10 px-4 py-2 m-auto text-xs text-white border border-white rounded-full w-fit border-opacity-40 top-6 md:top-8 font-playfair text'>

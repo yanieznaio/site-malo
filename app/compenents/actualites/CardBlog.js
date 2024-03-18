@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import ButtonLink from '../button/ButtonLink'
 import { AnimatePresence, animate, motion } from "framer-motion";
 
-const variants = {
+const variantsCard = {
     animate: {
         width: "var(--width-to)",
 
@@ -13,29 +13,53 @@ const variants = {
         width: "var(--width-from, 100%)"
     }
 }
+const variantsText = {
+    animate: {
+        opacity: "var(--width-to)",
+
+    },
+    initial: {
+        opacity: "var(--width-from, 100%)"
+    }
+}
 const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
     const [over, setOver] = useState(false);
 
     return (
-        <motion.div style={{ backgroundImage: `url(${img})` }} onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} variants={variants} whileHover="animate" initial="initial" transition={{ duration: 1, type: 'ease' }} className={`cursor-pointer relative  h-[45vh] md:h-[500px]   bg-cover bg-center w-full md:w-1/2
+
+        <motion.div onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} variants={variantsCard} whileHover="animate" initial="initial" transition={{ duration: 1, type: 'ease' }} className={`cursor-pointer relative  h-[40vh] md:h-[500px]   w-full md:w-1/2
         [--width-from:100%] md:[--width-from:50%]
         [--width-to:100%] md:[--width-to:100%]
         `}>
+            <div style={{ backgroundImage: `url(${img})` }} className='w-full h-full bg-center bg-cover brightness-75 '>
+
+            </div>
             {over &&
 
-                <>
-                    <motion.p animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='absolute z-10 w-1/2 md:text-xl top-6 left-6 md:w-full text-md '>{description}</motion.p>
+                <div className='hidden md:block'>
+                    <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl top-2 md:top-6 left-2 md:left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
 
-                    <motion.p animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='absolute text-xl font-semibold bottom-12 left-6 font-lato'> {title}</motion.p>
+                    <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-12 left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
 
-                    <motion.div animate={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -5 }} className='absolute right-6 bottom-12'>
+                    <motion.div variants={variantsText} initial="initial" animate="animate" className='absolute right-6 bottom-12  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'>
                         <button onClick={() => setShowModal(true)} className='px-4 py-2 text-black bg-white rounded-full '>Voir plus</button>
                     </motion.div>
-                </>
+                </div>
+
 
             }
+            <div className='block md:hidden'>
+                <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl top-2 md:top-6 left-2 md:left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
 
-        </motion.div>
+                <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-4 md:bottom-12 left-2 md:left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
+
+                <motion.div variants={variantsText} initial="initial" animate="animate" className='absolute right-6  bottom-4 md:bottom-12  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'>
+                    <button onClick={() => setShowModal(true)} className='px-4 py-2 text-black bg-white rounded-full '>Voir plus</button>
+                </motion.div>
+            </div>
+
+
+        </motion.div >
     )
 }
 
