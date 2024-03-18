@@ -38,7 +38,7 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
             {over &&
 
                 <div className='hidden md:block'>
-                    <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl top-2 md:top-6 left-2 md:left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
+                    <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute  w-1/2 md:text-xl top-2 md:top-6 left-2 md:left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
 
                     <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-12 left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
 
@@ -50,7 +50,7 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
 
             }
             <div className='block md:hidden'>
-                <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl  top-6 left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
+                <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute w-1/2 md:text-xl  top-6 left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
 
                 <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-4 md:bottom-12 left-2 md:left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
                 {
