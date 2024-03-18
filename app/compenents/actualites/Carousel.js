@@ -86,7 +86,7 @@ const Carousel = ({ setShowModal }) => {
             <div
                 className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
             >
-                <button onClick={() => setShowModal(false)} type="button" class="mt-2 bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <button onClick={() => setShowModal(false)} type="button" class="mt-2 ml-auto mr-6 bg-white rounded-full p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span class="sr-only">Close menu</span>
 
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -190,7 +190,7 @@ const Dots = ({ imgIndex, setImgIndex }) => {
 
     return (
 
-        <div className="flex justify-center w-full gap-2 mt-4">
+        <motion.div className="flex justify-center w-full gap-2 mt-4">
 
             {imgs.map((_, idx) => {
 
@@ -212,7 +212,7 @@ const Dots = ({ imgIndex, setImgIndex }) => {
 
             })}
 
-        </div>
+        </motion.div>
 
     );
 
