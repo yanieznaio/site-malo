@@ -93,7 +93,7 @@ const Carousel = ({ setShowModal }) => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <div className="relative w-screen px-4 py-8 overflow-hidden md:px-40 md:h-auto ">
+                <motion.div initial={{ x: "100vw", opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: 'ease', duration: 1 }} className="relative w-screen px-4 py-8 overflow-hidden md:px-40 md:h-auto ">
 
                     <motion.div
 
@@ -131,12 +131,11 @@ const Carousel = ({ setShowModal }) => {
 
                     <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
 
-                    <GradientEdges />
 
-                </div>
+                </motion.div>
 
             </div>
-            <div className="fixed inset-0 z-40 bg-black opacity-95"></div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ type: 'ease', duration: 1 }} className="fixed inset-0 z-40 bg-black opacity-95"></motion.div>
         </>
     )
 }
