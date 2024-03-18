@@ -92,7 +92,7 @@ const Navbar = () => {
 
     return (
         <header >
-            <motion.nav className="fixed z-20 flex items-center justify-between w-full px-8 py-4 md:absolute lg:py-4 font-mori">
+            <motion.nav className="fixed z-50 flex items-center justify-between w-full px-8 py-4 md:absolute lg:py-4 font-mori">
                 <div className="fixed flex items-center gap-[1ch] overflow-hidden">
                     <LogoAnimate />
                     <div className="overflow-hidden">
@@ -127,7 +127,7 @@ const Navbar = () => {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        className="fixed top-0 left-0 z-10 w-full h-screen p-4 text-black origin-top bg-dark-brown"
+                        className="fixed top-0 left-0 z-20 w-full h-screen p-4 text-black origin-top bg-dark-brown"
                     >
                         <div className="flex flex-col h-full">
 
