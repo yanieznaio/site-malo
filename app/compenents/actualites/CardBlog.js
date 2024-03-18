@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import ButtonLink from '../button/ButtonLink'
 import { AnimatePresence, animate, motion } from "framer-motion";
+import { MdArrowForward } from "react-icons/md";
 
 const variantsCard = {
     animate: {
@@ -52,10 +53,13 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
                 <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl  top-6 left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
 
                 <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-4 md:bottom-12 left-2 md:left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
+                {
+                    over &&
+                    <motion.div variants={variantsText} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ type: 'tween' }} className='absolute right-6  bottom-4 md:bottom-12  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'>
+                        <button onClick={() => setShowModal(true)} className='flex items-center justify-center gap-2 px-4 py-2 text-sm text-black bg-white rounded-full font-playfair '><MdArrowForward className='font-thin opacity-75' />Voir plus</button>
+                    </motion.div>
+                }
 
-                <motion.div variants={variantsText} initial="initial" animate="animate" className='absolute right-6  bottom-4 md:bottom-12  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'>
-                    <button onClick={() => setShowModal(true)} className='px-4 py-2 text-black bg-white rounded-full '>Voir plus</button>
-                </motion.div>
             </div>
 
 
