@@ -23,7 +23,7 @@ const ContactInformation = () => {
             <h2 className='md:text-[3.3vw] text-dark-brown'>Coordonnées</h2>
             <div className='flex flex-col justify-between md:flex-row md:min-h-[300px] md:h-[45vh]'>
                 <div className='relative w-full md:w-1/2 h-[200px] md:h-full'>
-                    <Image src="/map.png" alt="carte de Villeurbanne" fill={true} />
+                    <Image src="/map.png" alt="carte de Villeurbanne" fill={true} className='object-cover' />
                 </div>
                 <div className='flex flex-col gap-8 p-10 border md:rounded-r-full md:w-1/2 bg-light-beige'>
                     <h3 className='font-bold text-light-brown md:text-[2vw]'>COTÉ ENVIRONNEMENT</h3>
