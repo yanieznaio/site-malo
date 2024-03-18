@@ -27,11 +27,11 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
 
     return (
 
-        <motion.div onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} variants={variantsCard} whileHover="animate" initial="initial" transition={{ duration: 1, type: 'ease' }} className={`cursor-pointer relative  h-[40vh] md:h-[500px]   w-full md:w-1/2
+        <motion.div onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} variants={variantsCard} whileHover="animate" initial="initial" transition={{ duration: 1, type: 'ease' }} className={`cursor-pointer relative  h-[45vh] md:h-[500px]   w-full md:w-1/2
         [--width-from:100%] md:[--width-from:50%]
         [--width-to:100%] md:[--width-to:100%]
         `}>
-            <div style={{ backgroundImage: `url(${img})` }} className='w-full h-full bg-center bg-cover brightness-75 '>
+            <div style={{ backgroundImage: `url(${img})` }} className='w-full h-full bg-center bg-cover brightness-50 '>
 
             </div>
             {over &&
@@ -49,7 +49,7 @@ const CardBlog = ({ title, description, id, img, showModal, setShowModal }) => {
 
             }
             <div className='block md:hidden'>
-                <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl top-2 md:top-6 left-2 md:left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
+                <motion.p variants={variantsText} initial="initial" animate="animate" className={`absolute z-10 w-1/2 md:text-xl  top-6 left-6 md:w-full text-md  [--opacity-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]`}>{description}</motion.p>
 
                 <motion.p variants={variantsText} initial="initial" animate="animate" className='absolute text-xl font-semibold bottom-4 md:bottom-12 left-2 md:left-6 font-lato  [--opaciy-from:100%] md:[--opacity-from:50%][--opacity-to:100%] md:[--opacity-to:100%]'> {title}</motion.p>
 
