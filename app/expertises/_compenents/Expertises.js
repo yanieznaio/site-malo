@@ -27,7 +27,7 @@ const Expertises = () => {
                     <SideMenu selector={"section"}>
                         {
                             prestations && prestations.map((prestation, i) => (
-                                <section id={"section".concat(i)} data-nav-title={prestation.title} key={i} className='flex flex-col h-screen md:gap-4 pt-60 md:pt-80 ' data-scrollspy>
+                                <section id={"section".concat(i)} data-nav-title={prestation.title} key={i} className='flex flex-col min-h-screen gap-2 md:gap-4 pt-60 md:pt-80 ' data-scrollspy>
 
                                     <h1 className='text-xl md:text-3xl font-playfair'><span className='font-ogg'>0{i + 1} </span>{prestation.title}</h1>
                                     <p className='text-sm font-mori '>{prestation.resume}</p>
