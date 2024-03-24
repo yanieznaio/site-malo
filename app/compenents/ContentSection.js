@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/24/solid'
+
 
 
 import { BsHouse, BsBuildings } from "react-icons/bs";
@@ -34,7 +34,6 @@ const ContentSection = () => {
                         <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                             <p>
                                 La première étape incontournable pour toute entité est de mesurer son empreinte carbone.
-
                                 En France, cette démarche est rendue obligatoire pour les entreprises dépassant les 500 employés, les organismes publics comptant plus de 250 membres du personnel, ainsi que pour les municipalités de plus de 50 000 habitants, qui doivent également présenter un plan de transition en accompagnement de leur bilan.
 
                             </p>
@@ -43,7 +42,7 @@ const ContentSection = () => {
 
                                     <BsHouse className="flex-none w-5 h-5 mt-1 text-argile" />
                                     <span>
-                                        <strong className="font-semibold text-gray-900">Maisons individuelles</strong> Depuis le 1er janvier 2023, les assujettis doivent désormais intégrer dans leur bilan les émissions indirectes significatives (scope 3) - hormis pour les entreprises qui ne sont pas assujetties à la DPEF.
+                                        <strong className="font-semibold text-gray-900">Maisons individuelles</strong> Depuis le 1er janvier 2023, les assujettis doivent désormais intégrer dans leur bilan les émissions indirectes significatives scope 3 - hormis pour les entreprises qui ne sont pas assujetties à la DPEF.
                                     </span>
                                 </li>
                                 <li className="flex gap-x-3">
