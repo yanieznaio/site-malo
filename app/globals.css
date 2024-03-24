@@ -15,7 +15,6 @@
 
 html,
 body {
-  font-family: Inter;
   scroll-behavior: smooth;
 }
 
@@ -31,11 +30,15 @@ body {
 
 @layer base {
   h1 {
-    @apply text-3xl
+    @apply text-4xl
   }
 
   h2 {
-    @apply text-2xl md:text-3xl font-ogg
+    @apply text-3xl md:text-3xl
+  }
+
+  p {
+    @apply text-sm md:text-base
   }
 
 

@@ -15,7 +15,7 @@ const ParallaxImages = () => {
     const sm = useTransform(scrollYProgress, [0, 1], [1, -230]);
     const scale4 = useTransform(scrollYProgress, [0, 1], [1.5, 1])
     return (
-        <div ref={container} className='md:h-[90vh] relative '>
+        <div ref={container} className='relative '>
             <div className='sticky top-0 h-screen bg-light-brown'>
                 <div className='absolute top-0 flex items-center justify-center w-full h-full'>
 
@@ -41,7 +41,7 @@ const ParallaxImages = () => {
 
             </div>
 
-            <div className='absolute top-[50vh] md:top-60 left-[5vw] md:left-20'>
+            <div className='absolute top-80 md:top-60 left-[5vw] md:left-20'>
                 <motion.div style={{ y: sm }} className='relative  h-[200px] md:h-[60vh] w-[30vw] md:w-[20vw] '>
 
                     <Image src="/portrait.jpg" fill={true} alt='portrait' className="object-cover" />

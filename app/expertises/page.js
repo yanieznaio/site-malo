@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Expertises from './_compenents/Expertises'
+import LittleContactbox from '../compenents/actualites/LittleContactbox'
 const page = () => {
     return (
-        <>
+        <div className="bg-greybeige">
             <div className='flex flex-col w-full md:h-screen md:flex-row md:items-center md:justify-center bg-light-beige display '>
                 <div className='flex flex-col justify-between w-full h-auto gap-10 p-8 pt-20 md:w-2/4 md:h-full'>
                     <h2 className='w-3/4 font-mori text-sm md:text-[1.6vw] leading-tight'>Particulier, Promoteur Immobilier, Architecte, Bureau d’Etudes ou Entreprise ? Des  expertises adaptées à vos besoins.</h2>
@@ -24,8 +25,13 @@ const page = () => {
 
             </div>
             <Expertises />
+            <div className='flex items-center justify-center w-full p-10'>
+                <LittleContactbox />
+            </div>
 
-        </>
+
+
+        </div>
 
     )
 }

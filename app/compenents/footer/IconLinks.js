@@ -3,7 +3,7 @@ import React from 'react'
 
 const IconLinks = ({ link, content }) => {
     return (
-        <div className='p-2 text-xl transition-all duration-300 ease-in-out rounded-full text-dark-brown bg-light-brown hover:bg-white'>
+        <div className='p-2 text-xl transition-all duration-300 ease-in-out rounded-full text-dark-brown bg-light-brown md:hover:bg-white'>
             <a href={link} className=''>{content}</a>
         </div>
 

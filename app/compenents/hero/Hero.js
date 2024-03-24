@@ -5,7 +5,7 @@ import ButtonLink from '../button/ButtonLink'
 
 const Hero = () => {
     return (
-        <div className='flex items-center justify-center w-full h-screen display bg-argile'>
+        <div className='flex items-center justify-center w-full h-screen display bg-light-brown'>
 
             <div className='relative w-full mt-auto md:ml-auto h-1/2 md:w-1/2 md:h-full brightness-75'>
                 <Image fill={true} src='/house1.png' quality={100} className='' alt='Photo de maison' style={{ objectFit: "cover", objectPosition: "left" }} />
