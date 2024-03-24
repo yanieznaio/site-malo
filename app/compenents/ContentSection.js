@@ -14,7 +14,7 @@ const ContentSection = () => {
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
                         <div className="lg:max-w-lg">
-                            <p className="text-base font-semibold leading-7 text-argile">Deploy faster</p>
+                            <p className="text-base font-semibold leading-7 text-argile">Présentation</p>
                             <h1 className="mt-2 text-3xl font-bold tracking-tight text-dark-brown sm:text-4xl">  réaliser un  bilan carbone : première étape pour construire sa transition climatique</h1>
                             <p className="mt-6 text-xl leading-8 text-gray-700">
                                 Dans le cadre de l'effort général de lutte contre le changement climatique, la gestion et la réduction des émissions de gaz à effet de serre deviennent des priorités incontournables.

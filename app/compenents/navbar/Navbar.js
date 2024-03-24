@@ -92,8 +92,8 @@ const Navbar = () => {
 
     return (
         <header >
-            <motion.nav className="fixed z-50 flex items-center justify-between w-full px-8 py-4 md:absolute lg:py-4 font-mori">
-                <div className="fixed flex items-center gap-[1ch] overflow-hidden">
+            <motion.nav className="fixed z-50 flex items-center justify-between w-full px-8 py-4 md:absolute lg:py-4 font-mori ">
+                <div className="flex items-center gap-[1ch] overflow-hidden">
                     <LogoAnimate />
                     <div className="overflow-hidden">
                         <motion.span initial={{ opacity: 1 }} animate={hidden ? { x: -300 } : { x: 0 }} transition={{ duration: 0.5 }} className={`text-sm md:text-[1.1vw] font-semibold tracking-widest ${open ? "text-light-brown" : 'text-black'} hidden md:block`}>
