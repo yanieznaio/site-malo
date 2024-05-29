@@ -125,6 +125,9 @@ const Navbar = () => {
                             <li>
                                 <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Expertises</Link>
                             </li>
+                            <li>
+                                <Link href="/actualites" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Actualites</Link>
+                            </li>
 
                             <li>
                                 <Link href="/contact" className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">Contact</Link>
