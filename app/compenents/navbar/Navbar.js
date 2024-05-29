@@ -97,7 +97,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="bg-white">
+        <header className="bg-[#EAE7DD]">
 
 
             <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">

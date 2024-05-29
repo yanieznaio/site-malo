@@ -19,8 +19,7 @@ const FAQList = ({ content }) => {
     const { faq } = content;
     return (
         <section className="relative py-20 overflow-hidden bg-gray-50 transition-colors duration-[0.5s] ease-linear" style={{ backgroundColor: content.color }}>
-            <img className="absolute top-0 left-0 mt-44" src="saturn-assets/images/faq/light-blue-left.png" alt="" />
-            <img className="absolute top-0 right-0 mt-10" src="saturn-assets/images/faq/star-right.svg" alt="" />
+
             <div className="container relative px-4 mx-auto">
                 <div className="max-w-5xl mx-auto">
                     <div className="mb-24 text-center">

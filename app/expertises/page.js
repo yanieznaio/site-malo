@@ -8,9 +8,9 @@ import Image from 'next/image'
 const page = () => {
 
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} className="bg-white">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} className="bg-[#EAE7DD]">
 
-            <section className="flex flex-col justify-center items-center h-[80vh] relative bg-white text-center px-[2em]   "  >
+            <section className="flex flex-col justify-center items-center h-[80vh] relative  text-center px-[2em]   "  >
 
                 <Image src={'/homeia.jpg'} fill alt='house' sizes='100vw' style={{ objectFit: 'cover', objectPosition: 'top' }} className='brightness-75' />
 
