@@ -97,7 +97,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="">
+        <header className="overflow-hidden">
 
 
             <nav className="bg-white border-gray-200 ">
