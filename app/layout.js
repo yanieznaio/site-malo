@@ -5,15 +5,7 @@ import Footer from './compenents/footer/Footer'
 import local from 'next/font/local';
 const inter = Inter({ subsets: ['latin'] })
 
-const ogg = local({
-  src: [
-    {
-      path: '../public/fonts/Ogg-Thin.otf',
 
-    },
-  ],
-  variable: '--font-ogg',
-});
 
 const mori = local({
   src: [
@@ -32,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ogg.variable} ${inter.className} ${mori.variable}`}>
+      <body className={`${inter.className} ${mori.variable}`}>
         <Navbar />
         {children}
         <Footer />

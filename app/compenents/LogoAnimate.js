@@ -1,201 +1,99 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { AnimatePresence, motion } from "framer-motion";
 
 
 
-const Line = ({ x1, y1, x2, y2, ...rest }) => (
-    <motion.line
-        x1={x1}
-        y1={y1}
-        x2={x2}
-        y2={y2}
-        stroke="black"
-        strokeWidth="2"
-        {...rest}
-    />
-);
-const transition = { duration: 6, yoyo: Infinity, ease: "easeInOut" }
-const LogoAnimate = () => {
+
+const LogoAnimate = ({ open }) => {
+
+    const arr = ['14.28', '14.28', '28.56', '42.83', '57.12', '71.39', '85.67'];
+
+
     return (
-        <div>
+        <div className='z-50'>
 
 
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 200 200">
+            <motion.svg initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                 {/* Carré extérieur */}
-                <rect x="0" y="0" width="200" height="200" fill="none" stroke="black" strokeWidth="1" />
+                <rect x="0" y="0" width="200" height="200" fill="none" stroke={open ? "#EAE7DD" : "black"} strokeWidth="10" className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]' />
 
                 {/* Carré supérieur gauche */}
-                <rect x="0" y="0" width="100" height="100" fill="none" stroke="black" strokeWidth="1" />
+                <rect x="0" y="0" width="100" height="100" fill="none" stroke={open ? "#EAE7DD" : "black"} strokeWidth="7" className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]' />
                 {/* Lignes verticales */}
-                <motion.path
-                    d="M33.33,0 V100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M66.66,0 V100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M100,0 V100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                {/* Lignes supplémentaires */}
-                <motion.path
-                    d="M16.66,0 V100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M50,0 V100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M83.33,0 V100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
+                {
+                    arr.map((x, i) => (
+                        <motion.path
+                            key={i}
+                            d={`M${x},0 V100`}
+                            stroke={open ? "#EAE7DD" : "black"} strokeWidth="7"
+                            className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]'
+                            initial={{ pathLength: 0, pathOffset: 1 }}
+                            animate={{ pathLength: 1, pathOffset: 0 }}
+                            transition={{ duration: 0.5 }}
+                        />
+                    ))
+                }
+
+
 
                 {/* Carré supérieur droit */}
-                <rect x="100" y="0" width="100" height="100" fill="none" stroke="black" strokeWidth="1" />
+                <rect x="100" y="0" width="100" height="100" fill="none" stroke={open ? "#EAE7DD" : "black"} strokeWidth="7" className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]' />
                 {/* Lignes horizontales */}
-                <motion.path
-                    d="M100,20 H200"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M100,40 H200"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M100,60 H200"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M100,80 H200"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M100,100 H200"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-
-
+                {
+                    arr.map((x, i) => (
+                        <motion.path
+                            key={i}
+                            d={`M100,${x} H200`}
+                            stroke={open ? "#EAE7DD" : "black"} strokeWidth="7"
+                            className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]'
+                            initial={{ pathLength: 0, pathOffset: 1 }}
+                            animate={{ pathLength: 1, pathOffset: 0 }}
+                            transition={{ duration: 0.2 }}
+                        />
+                    ))
+                }
                 {/* Carré inférieur gauche */}
-                <rect x="0" y="100" width="100" height="100" fill="none" stroke="black" strokeWidth="1" />
+                <rect x="0" y="100" width="100" height="100" fill="none" stroke={open ? "#EAE7DD" : "black"} strokeWidth="7" className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]' />
                 {/* Lignes horizontales */}
-                <motion.path
-                    d="M0,133.33 H100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M0,166.66 H100"
-                    stroke="black" strokeWidth="1"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M0,200 H100"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                {/* Lignes supplémentaires */}
-                <motion.path
-                    d="M0,150 H100"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
-                <motion.path
-                    d="M0,183.33 H100"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.2 }}
-                />
+                {
+                    arr.map((x, i) => (
+                        <motion.path
+                            key={i}
+                            d={`M0,1${x} H100`}
+                            stroke={open ? "#EAE7DD" : "black"} strokeWidth="7"
+                            className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]'
+                            initial={{ pathLength: 0, pathOffset: 1 }}
+                            animate={{ pathLength: 1, pathOffset: 0 }}
+                            transition={{ duration: 0.2 }}
+                        />
+                    ))
+                }
 
                 {/* Carré inférieur droit */}
-                <rect x="100" y="100" width="100" height="100" fill="none" stroke="black" strokeWidth="1" />
+                <rect x="100" y="100" width="100" height="100" fill="none" stroke={open ? "#EAE7DD" : "black"} strokeWidth="7" className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]' />
                 {/* Lignes verticales */}
-                <motion.path
-                    d="M113.33,100 V200"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M133.33,100 V200"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M166.66,100 V200"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
+                {
+                    arr.map((x, i) => (
+                        <motion.path
+                            key={i}
 
-                {/* Lignes supplémentaires */}
-                <motion.path
-                    d="M150,100 V200"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <motion.path
-                    d="M183.33,100 V200"
-                    stroke="black" strokeWidth="2"
-                    initial={{ pathLength: 0, pathOffset: 1 }}
-                    animate={{ pathLength: 1, pathOffset: 0 }}
-                    transition={{ duration: 0.5 }}
-                />
+                            d={`M1${x},100 V200`}
+                            stroke={open ? "#EAE7DD" : "black"} strokeWidth="7"
+                            className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]'
+                            initial={{ pathLength: 0, pathOffset: 1 }}
+                            animate={{ pathLength: 1, pathOffset: 0 }}
+                            transition={{ duration: 0.5 }}
+                        />
 
-            </svg>
+                    ))
+                }
+
+
+
+            </motion.svg>
 
         </div>
     )

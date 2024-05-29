@@ -8,7 +8,8 @@ import { HiBars2 } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
 import StyledLi from "../footer/StyledLi";
 import LogoAnimate from "../LogoAnimate";
-
+import Nav from "./Nav";
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
     { title: "Accueil", href: "/#" },
@@ -18,12 +19,17 @@ const navLinks = [
 
 ];
 const Navbar = () => {
+    const pathname = usePathname();
     const [open, setOpen] = useState(false);
     const { scrollY } = useScroll()
     const [hidden, setHidden] = useState(false);
     const toggleMenu = () => {
         setOpen((prevOpen) => !prevOpen);
     };
+    useEffect(() => {
+        if (open) setOpen(false)
+
+    }, [pathname])
     const menuVars = {
         initial: {
             scaleY: 0,
@@ -77,13 +83,13 @@ const Navbar = () => {
             setHidden(true);
 
         }
-        console.log(hidden)
+
     }
 
 
 
     useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log("Page scroll: ", latest)
+
         update()
     })
 
@@ -91,68 +97,47 @@ const Navbar = () => {
 
 
     return (
-        <header >
-            <motion.nav className="absolute z-50 flex items-center justify-between w-full px-8 py-4 lg:py-4 font-mori">
-                <div className="flex items-center gap-[1ch] overflow-hidden">
-                    <LogoAnimate />
-                    <div className="overflow-hidden">
-                        <motion.span initial={{ opacity: 1 }} animate={hidden ? { x: -300 } : { x: 0 }} transition={{ duration: 0.5 }} className={`text-sm md:text-[1.1vw] font-semibold tracking-widest ${open ? "text-light-brown" : 'text-black'} hidden md:block`}>
-                            COTÉ ENVIRONNEMENT
-                        </motion.span>
-                    </div>
+        <header className="bg-white">
 
-                </div>
-                <button
-                    className={`md:hidden ml-auto px-6 py-1 text-2xl  rounded-full cursor-pointer  ${open ? "text-dark-brown bg-light-brown" : "bg-dark-brown text-white"}`}
-                    onClick={toggleMenu}
-                >
-                    {open ? <IoCloseOutline /> : <HiBars2 />}
 
-                </button>
-                <div className="hidden gap-12 ml-auto text-white lg:flex text-md ">
-                    <Link href="/" className="block py-2  rounded md:border-0 relative   after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ">
-                        Accueil
-                    </Link>
-                    <Link href="/expertises" className="block py-2    rounded md:border-0 relative   after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ">
-                        Expertises
-                    </Link>
-                    <Link href='/contact' className="block py-2   rounded md:border-0 relative   after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ">Contact</Link>
-                </div>
+            <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+                <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+                    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+                        <div className="flex items-center gap-[1ch] overflow-hidden">
+                            <LogoAnimate open={open} />
+                            <div className="overflow-hidden">
+                                <motion.span initial={{ opacity: 1 }} animate={hidden ? { x: -300 } : { x: 0 }} transition={{ duration: 0.5 }} className={`text-sm md:text-[1.1vw] font-semibold tracking-widest ${open ? "text-light-brown" : 'text-black'} hidden md:block`}>
+                                    COTÉ ENVIRONNEMENT
+                                </motion.span>
+                            </div>
 
-            </motion.nav>
-            <AnimatePresence>
-                {open && (
-                    <motion.div
-                        variants={menuVars}
-                        initial="initial"
-                        animate="animate"
-                        exit="exit"
-                        className="fixed top-0 left-0 z-20 w-full h-screen p-4 text-black origin-top bg-dark-brown"
-                    >
-                        <div className="flex flex-col h-full">
-
-                            <motion.div
-                                variants={containerVars}
-                                initial="initial"
-                                animate="open"
-                                exit="initial"
-                                className="flex flex-col h-full gap-2 pt-10 pl-6 text-white font-lora"
-                            >
-                                {navLinks.map((link, index) => {
-                                    return (
-                                        <div className="overflow-hidden" key={index}>
-                                            <MobileNavLink
-
-                                                title={link.title}
-                                                href={link.href}
-                                                toggleMenu={toggleMenu}
-                                            />
-                                        </div>
-                                    );
-                                })}
-                            </motion.div>
                         </div>
-                    </motion.div>
+                    </a>
+                    <button onClick={toggleMenu} data-collapse-toggle="navbar-multi-level" type="button" className={`${open ? "text-dark-brown bg-light-brown" : "bg-dark-brown text-white"} inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden z-30`}>
+                        <span className="sr-only">Open main menu</span>
+                        {open ? <IoCloseOutline /> : <HiBars2 />}
+                    </button>
+                    <div className="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                        <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">A propos</Link>
+                            </li>
+                            <li>
+                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">Expertises</Link>
+                            </li>
+
+                            <li>
+                                <Link href="/contact" className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <AnimatePresence mode="wait">
+                {open && (
+                    <Nav />
                 )}
             </AnimatePresence>
         </header>
@@ -175,14 +160,4 @@ const mobileLinkVars = {
             duration: 0.7,
         },
     },
-};
-const MobileNavLink = ({ title, href, toggleMenu }) => {
-    return (
-        <motion.div
-            variants={mobileLinkVars}
-            className="text-4xl text-light-brown font-playfair"
-        >
-            <StyledLi href={href} content={title} toggleMenu={toggleMenu} />
-        </motion.div>
-    );
 };

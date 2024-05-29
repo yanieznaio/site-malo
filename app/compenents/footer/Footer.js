@@ -14,7 +14,7 @@ const Footer = () => {
                 <ul className='md:w-4/5 text-4xl md:text-[4vw]  font-playfair  flex flex-col '>
                     <motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div>
 
-                    <li whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='py-2 pl-4  md:py-[3vw]  flex items-center '>  <StyledLi href="/" content={"Accueil"} /></li>
+                    <li className='py-2 pl-4  md:py-[3vw]  flex items-center '>  <StyledLi href="/" content={"Accueil"} /></li>
                     <li><motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div></li>
                     <li className='py-2 pl-4 md:py-[3vw]   flex items-center'>  <StyledLi href="/" content={"A propos"} /></li>
                     <li><motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div></li>

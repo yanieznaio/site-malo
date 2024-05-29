@@ -1,62 +1,65 @@
-import Image from 'next/image'
+
 import React from 'react'
-import Footer from '../compenents/footer/Footer'
-import ContactInformation from './_compenents/ContactInformation'
-import LogoAnimate from '../compenents/LogoAnimate'
+
 
 const page = () => {
     return (
         <>
-            <div className='flex flex-col-reverse w-full md:h-screen md:pt-0 md:flex-row md:items-center md:justify-center bg-light-beige display text-dark-brown'>
-
-                <div className='flex flex-col p-4 md:p-20 md:pt-40 md:w-1/2'>
-
-                    <div className='flex flex-col gap-6 md:w-3/5 '>
-
-                        <h1 className='font-bold font-playfair md:text-[5vw] '>Contact</h1>
-                        <p className='text-sm font-light'>Nous sommes la pour vous accompagner , Prenez contact afin que nous puissions évaluer, ensemble, vos besoins. </p>
 
 
-                    </div>
+            <section className="min-h-screen bg-cover " style={{ backgroundImage: "url('/house.jpg')" }}>
+                <div className="flex flex-col min-h-screen bg-black/60">
+                    <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
+                        <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
+                            <div className="text-[#ffff] lg:w-1/2 lg:mx-6">
+                                <h1 className="text-2xl font-semibold capitalize lg:text-3xl">Vous souaitez en savoir plus</h1>
+
+                                <p className="max-w-xl mt-6">
+                                    Nous sommes la pour vous accompagner , Prenez Contact afin que nous puissions évaluer, ensemble, vos besoins.
+                                </p>
+
+                                <button className="px-8 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                                    07 83 83 39 47
+                                </button>
 
 
-                    <form className=''>
-                        <div class=" space-y-4 mt-8">
-                            <input type="text" placeholder="Nom"
-                                class="px-2 py-3 bg-transparent w-full text-sm border-b border-gray-400 focus:border-dark-brown outline-none" />
-                            <input type="text" placeholder="Prénom"
-                                class="px-2 py-3 bg-transparent  w-full text-sm border-b border-gray-400 focus:border-dark-brown outline-none" />
-                            <input type="number" placeholder="Numéro"
-                                class="px-2 py-3 bg-transparent  w-full text-sm border-b border-gray-400 focus:border-dark-brown outline-none" />
+                            </div>
 
-                            <input type="email" placeholder="Email"
-                                class="px-2 py-3 bg-transparent  w-full text-sm border-b border-gray-400 focus:border-dark-brown outline-none" />
+                            <div className="mt-8 lg:w-1/2 lg:mx-6">
+                                <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-[#ffff] shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
+                                    <h1 className="text-xl font-medium text-gray-700 dark:text-gray-200">Formulaire de contact</h1>
 
-                            <textarea placeholder="Message"
-                                class="px-2 pt-3 bg-transparent  w-full text-sm border-b border-gray-400 focus:border-dark-brown outline-none"></textarea>
+                                    <p className="mt-2 text-gray-500 dark:text-gray-400">
+                                        Nous vous répondrons dans les plus brefs délais
+                                    </p>
+
+                                    <form className="mt-6">
+                                        <div className="flex-1">
+                                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Nom Prénom</label>
+                                            <input type="text" placeholder="Nom" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-[#ffff] border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                                        </div>
+
+                                        <div className="flex-1 mt-6">
+                                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-mail</label>
+                                            <input type="email" placeholder="email@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-[#ffff] border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                                        </div>
+
+                                        <div className="w-full mt-6">
+                                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Votre message</label>
+                                            <textarea className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-[#ffff] border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" placeholder="Message"></textarea>
+                                        </div>
+
+                                        <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-[#ffff] capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                                            Envoyer
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button"
-                            class="mt-8 rounded-full flex items-center justify-center text-sm w-full px-4 py-2.5 font-semibold bg-dark-brown text-white hover:bg-blue-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
-                                viewBox="0 0 548.244 548.244">
-                                <path fill-rule="evenodd"
-                                    d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-                                    clip-rule="evenodd" data-original="#000000" />
-                            </svg>
-                            Envoyer
-                        </button>
-                    </form>
+                    </div>
                 </div>
-                <div className='relative w-full mb-auto min-h-[200px] md:mr-auto h-2/6 md:w-1/2 md:h-full brightness-50'>
-                    <Image fill={true} src='/woodHome.jpg' quality={100} className='' alt='Photo de maison' style={{ objectFit: "cover" }} />
+            </section>
 
-                </div>
-
-
-
-
-            </div>
-            <ContactInformation />
 
         </>
 
