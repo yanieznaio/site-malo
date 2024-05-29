@@ -20,7 +20,7 @@ const Nav = ({ isActive, setIsActive }) => {
         },
         {
             href: "#conseils-accompagnement",
-            title: "Conseils & A ccompagnement"
+            title: "Conseils et accompagnement"
         }
     ]
 
