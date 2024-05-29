@@ -51,7 +51,7 @@ const LogoAnimate = ({ open }) => {
                             className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]'
                             initial={{ pathLength: 0, pathOffset: 1 }}
                             animate={{ pathLength: 1, pathOffset: 0 }}
-                            transition={{ duration: 0.2 }}
+                            transition={{ duration: 0.5 }}
                         />
                     ))
                 }
@@ -67,7 +67,7 @@ const LogoAnimate = ({ open }) => {
                             className='transition-[stroke] duration-[0.8s] ease-[0.76,0,0.24,1]'
                             initial={{ pathLength: 0, pathOffset: 1 }}
                             animate={{ pathLength: 1, pathOffset: 0 }}
-                            transition={{ duration: 0.2 }}
+                            transition={{ duration: 0.5 }}
                         />
                     ))
                 }
