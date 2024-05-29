@@ -15,10 +15,11 @@ const Footer = () => {
                     <motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div>
 
                     <li className='py-2 pl-4  md:py-[3vw]  flex items-center '>  <StyledLi href="/" content={"Accueil"} /></li>
-                    <li><motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div></li>
-                    <li className='py-2 pl-4 md:py-[3vw]   flex items-center'>  <StyledLi href="/" content={"A propos"} /></li>
+
                     <li><motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div></li>
                     <li className='py-2 pl-4  md:py-[3vw]  flex items-center'>  <StyledLi href="/expertises" content={"Expertises"} /></li>
+                    <li><motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div></li>
+                    <li className='py-2 pl-4 md:py-[3vw]   flex items-center'>  <StyledLi href="/actualites" content={"Actualités"} /></li>
                     <li><motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='h-px bg-light-brown'></motion.div></li>
                     <li className='py-2 pl-4  md:py-[3vw]  flex items-center'><StyledLi href="/contact" content={"Contact"} /></li>
 
