@@ -59,11 +59,11 @@ const BoxInfo = ({ content }) => {
                         </div>
                         <div className="w-full px-4 mb-24 lg:w-1/2 lg:mb-0">
                             <div className="max-w-lg mx-auto lg:mr-0">
-                                <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-green-800 rounded-full bg-green-50">Le saviez vous ?</span>
-                                <h1 className="mb-6 text-5xl font-bold text-gray-900 font-heading xs:text-6xl">
+                                <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-green-800 rounded-full bg-green-50">info</span>
+                                <h1 className="mb-6 text-4xl font-bold text-gray-900 font-heading xs:text-6xl">
                                     <span>{title}</span>
                                     <span className="px-2 font-serif italic">le saviez</span>
-                                    <span>vous ?</span>
+                                    <span>vous ? </span>
                                 </h1>
                                 <p className="mb-6 text-lg font-semibold">{subtitle}</p>
                                 <p className="text-gray-400">{texte}</p>
