@@ -5,8 +5,7 @@ const BoxInfo = ({ content }) => {
     const { img, title, subtitle, texte } = content
     return (
         <section className="relative pt-24 pb-24 overflow-hidden md:pb-20 lg:pt-32 ">
-            <img className="absolute bottom-0 left-0" src="saturn-assets/images/features/left-blue-center.png" alt="" />
-            <img className="absolute right-0 transform translate-y-1/2 bottom-1/2" src="saturn-assets/images/features/orange-right-top.png" alt="" />
+
             <div className="container relative px-4 mx-auto">
                 <div className="mx-auto max-w-7xl">
                     <div className="flex flex-wrap items-center -mx-4">
