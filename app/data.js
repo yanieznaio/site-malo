@@ -113,7 +113,7 @@ export const prestations = [
         href: "reemplois-economie",
         title: "Reemploi, économie circulaire",
         color: "blue",
-        description: " VERS DE NOUVELLES PRATIQUES DANS LA CONSTRUCTION",
+        description: " Vers de nouvelles pratiques dans la construction ",
         img: "/house.jpg",
         secondImage: "/house2.jpg",
         white: true,
