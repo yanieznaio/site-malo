@@ -15,7 +15,7 @@ const HeroBox = () => {
                 <p className='w-4/5 m-auto text-xs md:text-lg opacity-80 font-mori md:leading-[19px] mt-2'>Votre guide vers un bâtiment zéro carbone </p>
 
             </div>
-            <hr className="h-px my-2 mt-auto bg-gray-200 border-0 dark:bg-gray-700 opacity-40"></hr>
+            <hr className="h-px my-2 mt-auto bg-gray-200 border-0 opacity-40"></hr>
         </motion.div >
     )
 }
