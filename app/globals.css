@@ -45,7 +45,7 @@ body {
 }
 
 @layer utilities {
-  .btn_green {}
+
 
   .max-container {
     @apply mx-auto max-x-[14440px];
