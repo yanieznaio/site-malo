@@ -10,9 +10,9 @@ const page = () => {
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} className="bg-[#EAE7DD]">
 
-            <section className="flex flex-col justify-center items-center h-[80vh] relative  text-center px-[2em]   "  >
+            <section className="flex flex-col justify-center items-center h-[600px] md:h-[80vh] relative  text-center px-[2em]   "  >
 
-                <Image src={'/homeia.jpg'} fill alt='house' sizes='100vw' style={{ objectFit: 'cover', objectPosition: 'top' }} className='brightness-75' />
+                <Image src={'/homeia.jpg'} unoptimized={true} fill alt='house' sizes='100vw' className='object-cover object-left md:object-top brightness-75' />
 
 
                 <motion.h1 animate={{ y: 0 }} initial={{ y: 50 }} transition={{ type: "ease" }} className='text-[2rem] m-0 tracking-[1rem] z-10 text-[#ffff]'>NOS EXPERTISES</motion.h1>

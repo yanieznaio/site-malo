@@ -24,7 +24,7 @@ const Cta = ({ green }) => {
                         </div>
                     </div>
                     <div className="relative mt-16 h-80 lg:mt-8">
-                        <img className="absolute left-0 top-0 w-[29rem] md:w-[44rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="/modernhouse.png" alt="App screenshot" width="1824" height="1080" />
+                        <img className="absolute left-0 top-0 w-[29rem] md:w-[44rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="/modernhouse.png" alt="App screenshot" />
                     </div>
                 </div>
             </div>
