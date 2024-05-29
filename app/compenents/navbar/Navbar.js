@@ -97,10 +97,10 @@ const Navbar = () => {
 
 
     return (
-        <header className="bg-[#EAE7DD]">
+        <header className="">
 
 
-            <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <nav className="bg-white border-gray-200 ">
                 <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <div className="flex items-center gap-[1ch] overflow-hidden">
@@ -118,16 +118,16 @@ const Navbar = () => {
                         {open ? <IoCloseOutline /> : <HiBars2 />}
                     </button>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-                        <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:border-gray-700">
                             <li>
-                                <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">A propos</Link>
+                                <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">A propos</Link>
                             </li>
                             <li>
-                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">Expertises</Link>
+                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Expertises</Link>
                             </li>
 
                             <li>
-                                <Link href="/contact" className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link>
+                                <Link href="/contact" className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white">Contact</Link>
                             </li>
                         </ul>
                     </div>

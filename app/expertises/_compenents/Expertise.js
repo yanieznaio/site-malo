@@ -15,8 +15,8 @@ const Expertise = ({ prestations }) => {
             <Nav prestations={prestations} setIsActive={setIsActive} isActive={isActive} />
 
             <div id={prestations[isActive].href}>
-                <section className="bg-[#F6F5F2] dark:bg-gray-900">
-                    <div className="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                <section className="bg-[#F6F5F2]">
+                    <div className="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto  lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div className="w-full px-4 mb-24 lg:mb-0">
                             <div className="max-w-lg mx-auto lg:mr-0">
                                 <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-green-700 rounded-full bg-green-50">Expertise</span>
