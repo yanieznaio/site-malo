@@ -1,8 +1,9 @@
+"use client"
 import React from 'react'
-
+import { motion } from 'framer-motion'
 const page = () => {
     return (
-        <div className=''>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} className=''>
 
             <section className="relative py-20 overflow-hidden">
                 <img className="absolute top-0 right-0 -mr-24 xl:mt-10 lg:-mr-0" src="saturn-assets/images/blog/star-circle-right.svg" alt="" />
@@ -91,7 +92,7 @@ const page = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </motion.div>
     )
 }
 
