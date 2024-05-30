@@ -1,52 +1,8 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 const page = () => {
-    const [loading, setLoading] = useState(false)
-    const [successMessage, setSuccessMessage] = useState('')
-
-    const onSubmit = async (e) => {
-        // Prevent the form from submitting the traditional way
-        e.preventDefault()
-
-        // Don't submit twice
-        if (loading) {
-            return
-        }
-
-        // 👇 A nice little track to get all the form values as an object
-        const form = e.target
-        const formValues = Object.fromEntries(new FormData(form).entries())
-
-        setLoading(true)
-        setSuccessMessage('')
-
-        try {
-            await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formValues),
-            }).then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`)
-                }
-                return response.json()
-            })
-
-            setLoading(false)
-            setSuccessMessage('Thank you for contacting us!')
-
-            // Reset the form values after a successful submission
-            form.reset()
-        } catch (err) {
-            console.error(err)
-            alert('An error occurred while sending your message...')
-            setLoading(false)
-        }
-    }
-
-
     return (
 
 
@@ -77,26 +33,25 @@ const page = () => {
                                     Nous vous répondrons dans les plus brefs délais
                                 </p>
 
-                                <form className="mt-6" onSubmit={onSubmit}>
+                                <form className="mt-6">
                                     <div className="flex-1">
                                         <label className="block mb-2 text-sm text-gray-600 ">Nom Prénom</label>
-                                        <input type="text" placeholder="Nom" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-[#ffff] border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring" required />
+                                        <input type="text" placeholder="Nom" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-[#ffff] border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring" />
                                     </div>
 
                                     <div className="flex-1 mt-6">
                                         <label className="block mb-2 text-sm text-gray-600 ">E-mail</label>
-                                        <input type="email" placeholder="email@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-[#ffff] border border-gray-200 rounded-md   focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring" required />
+                                        <input type="email" placeholder="email@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-[#ffff] border border-gray-200 rounded-md   focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring" />
                                     </div>
 
                                     <div className="w-full mt-6">
                                         <label className="block mb-2 text-sm text-gray-600 ">Votre message</label>
-                                        <textarea className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-[#ffff] border border-gray-200 rounded-md md:h-48  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring" placeholder="Message" required></textarea>
+                                        <textarea className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-[#ffff] border border-gray-200 rounded-md md:h-48  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring" placeholder="Message"></textarea>
                                     </div>
 
-                                    <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-[#ffff] capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50" disabled={loading} type='submit'>
+                                    <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-[#ffff] capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
                                         Envoyer
                                     </button>
-                                    {successMessage && <p>{successMessage}</p>}
                                 </form>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { prestations } from '../../data'
+import { prestations } from '@/app/data'
 import React from 'react'
 import Card from './Card'
 
