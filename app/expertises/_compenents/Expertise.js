@@ -1,12 +1,12 @@
 "use client"
-import Info from '@/app/compenents/Info'
+
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Nav from './Nav'
-import Cta from '@/app/compenents/Cta'
+import Cta from '../../compenents/Cta'
 import FAQList from './faqs/FAQList'
 import BoxInfo from './BoxInfo'
-
+import Info from '../../compenents/Info'
 const Expertise = ({ prestations }) => {
 
     const [isActive, setIsActive] = useState(0)
@@ -16,7 +16,7 @@ const Expertise = ({ prestations }) => {
 
             <div id={prestations[isActive].href}>
                 <section className="bg-[#F6F5F2]">
-                    <div className="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto  lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div className="w-full px-4 mb-24 lg:mb-0">
                             <div className="max-w-lg mx-auto lg:mr-0">
                                 <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-green-700 rounded-full bg-green-50">Expertise</span>

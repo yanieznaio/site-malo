@@ -1,8 +1,8 @@
-import { prestations } from '@/app/data'
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { prestations } from '../../data'
 const Cards = () => {
     return (
         <section className="relative pt-20 pb-24 overflow-hidden md:pb-20 lg:pt-32">

@@ -1,10 +1,7 @@
 "use client"
-
-import { prestations } from '@/app/data'
 import React from 'react'
 import Card from './Card'
-import { useRef } from 'react';
-
+import { prestations } from '../../data'
 
 const Slider = () => {
 
