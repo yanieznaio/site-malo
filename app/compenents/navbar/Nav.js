@@ -53,7 +53,7 @@ const Nav = () => {
             initial="initial"
             animate="enter"
             exit="exit"
-            className="h-screen fixed bg-[rgb(41,41,41)] right-0 top-0  text-white z-20 w-screen md:hidden"
+            className=" min-h-screen fixed bg-[rgb(41,41,41)] right-0 top-0  text-white z-20  md:hidden "
         >
             <div className="box-border h-full p-[100px] flex flex-col justify-between">
                 <div onMouseLeave={() => { setSelectedIndicator(pathname) }} className="flex flex-col text-[46px]  md:text-[56px] md:gap-[0px] md:mt-[20px]">
