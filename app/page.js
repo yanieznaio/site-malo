@@ -24,7 +24,7 @@ export default function Home() {
     <main className="relative w-full bg-white">
       <Hero />
       <Cards />
-      <Cta green />
+      <Cta />
       <Actualites />
       <Slider />
     </main>
