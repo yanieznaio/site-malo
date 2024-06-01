@@ -20,7 +20,7 @@ const Expertise = ({ prestations }) => {
                         <div className="w-full px-4 mb-24 lg:mb-0">
                             <div className="max-w-lg mx-auto lg:mr-0">
                                 <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-green-700 rounded-full bg-green-50">Expertise</span>
-                                <h1 className="flex flex-wrap mb-6 text-[44px] font-bold text-gray-900 md:text-6xl">
+                                <h1 className="flex flex-wrap mb-6 text-4xl font-bold text-gray-900 md:text-6xl">
                                     <span>{prestations[isActive].title.split(' ')[0]}</span>
                                     <span className="px-3 font-serif italic">{prestations[isActive].title.split(' ')[1]}</span>
                                     <span>{prestations[isActive].title.split(' ')[2]}</span>
