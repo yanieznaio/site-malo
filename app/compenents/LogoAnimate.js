@@ -12,7 +12,7 @@ const LogoAnimate = ({ open }) => {
 
 
     return (
-        <div className='z-50'>
+        <div className='z-50 rotate-90'>
 
 
 
