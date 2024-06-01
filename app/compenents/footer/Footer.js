@@ -48,7 +48,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <motion.h1 viewport={{ once: true }} initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{ type: 'tween' }} className='md:text-[8.2vw] mt-10 font-bold m-auto  bg-dark-brown'>COTÉ ENVIRONNEMENT</motion.h1>
+            <motion.h1 viewport={{ once: true }} initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{ type: 'tween' }} className=' text-[8.2vw] mt-10 font-bold m-auto  bg-dark-brown'>COTÉ ENVIRONNEMENT</motion.h1>
 
         </footer>
     )
