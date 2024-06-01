@@ -18,6 +18,8 @@ body {
   scroll-behavior: smooth;
 }
 
+
+
 .active {
   opacity: 1;
   font-weight: bolder;
@@ -39,6 +41,10 @@ body {
 
   p {
     @apply text-sm md:text-base
+  }
+
+  strong {
+    @apply font-medium text-gray-600
   }
 
 

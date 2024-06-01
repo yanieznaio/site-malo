@@ -38,9 +38,9 @@ const Footer = () => {
                     <motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='hidden h-px md:block bg-light-brown'></motion.div>
                     <ul className='flex gap-2 md:gap-0 text-xs p-[3vw] md:p-0 md:text-center md:flex-col'>
 
-                        <li className=' p-[1vw]'><p className='transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:text-white'>confifentialite</p></li>
+                        <li className=' md:p-[1vw]'><p className='transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:text-white'>confifentialite</p></li>
                         <motion.div viewport={{ once: true }} whileInView={{ width: '100%' }} initial={{ width: 0 }} transition={{ type: 'ease', duration: 0.3 }} className='hidden h-px md:block bg-light-brown'></motion.div>
-                        <li className=' p-[1vw] '><p className='transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:text-white'>termes et conditions</p></li>
+                        <li className=' md:p-[1vw] '><p className='transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:text-white'>termes et conditions</p></li>
                     </ul>
                 </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <motion.h1 viewport={{ once: true }} initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{ type: 'tween' }} className='text-[8.2vw] mt-10 font-bold  bg-dark-brown'>COTÉ ENVIRONNEMENT</motion.h1>
+            <motion.h1 viewport={{ once: true }} initial={{ scale: 0.9 }} whileInView={{ scale: 1 }} transition={{ type: 'tween' }} className='md:text-[8.2vw] mt-10 font-bold m-auto  bg-dark-brown'>COTÉ ENVIRONNEMENT</motion.h1>
 
         </footer>
     )
