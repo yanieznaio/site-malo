@@ -22,7 +22,7 @@ const FAQList = ({ content }) => {
 
             <div className="container relative px-4 mx-auto">
                 <div className="max-w-5xl mx-auto">
-                    <div className="mb-24 text-center">
+                    <div className="mb-10 text-center md:mb-24">
                         <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-green-800 rounded-full bg-green-50">Les questions</span>
                         <h1 className="text-5xl font-bold text-gray-900 font-heading xs:text-6xl md:text-7xl">
 
@@ -30,7 +30,7 @@ const FAQList = ({ content }) => {
 
                         </h1>
                     </div>
-                    <div className="md:pt-18 p-10 sm:pt-20 px-10 sm:px-20  bg-[#F6F5F2] rounded-4xl shadow-lg rounded-xl">
+                    <div className="md:pt-18 md:p-10 sm:pt-20 md:py-20  sm:px-20  bg-[#F6F5F2] rounded-4xl md:shadow-lg rounded-xl">
 
                         {
                             faq.map((ele, i) => (
