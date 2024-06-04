@@ -23,7 +23,7 @@ const page = () => {
                     </div>
 
 
-                    <div class="max-w-4xl mx-auto">
+                    <div class="max-w-3xl mx-auto">
                         <div class="text-center mb-12 ">
                             <div class="mb-4 inline-flex">
                                 <span class="me-3 text-sm text-gray-400">17 Jul 2023</span>
@@ -150,4 +150,4 @@ const page = () => {
     )
 }
 
-export default page
+export default page 

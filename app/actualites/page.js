@@ -31,7 +31,7 @@ const page = () => {
                                     </div>
                                 </div>
                                 <div className="w-full px-4 ml-auto text-right lg:w-auto">
-                                    <Link className="inline-flex items-center text-xl font-semibold text-orange-900 hover:text-gray-900" href="/article">
+                                    <Link className="inline-flex items-center text-xl font-semibold text-orange-900 hover:text-gray-900" href="/actualites/re2020-a-savoir">
                                         <span className="mr-2">Lire</span>
                                         <svg className="animate-bounce" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.33301 14.6668L14.6663 1.3335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -53,7 +53,7 @@ const page = () => {
                                     </div>
                                 </div>
                                 <div className="w-full px-4 ml-auto text-right lg:w-auto">
-                                    <Link className="inline-flex items-center text-xl font-semibold text-orange-900 hover:text-gray-900" href="#">
+                                    <Link className="inline-flex items-center text-xl font-semibold text-orange-900 hover:text-gray-900" href="/actualites/construire-bas-carbone">
                                         <span className="mr-2">Lire</span>
                                         <svg className="animate-bounce" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.33301 14.6668L14.6663 1.3335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
