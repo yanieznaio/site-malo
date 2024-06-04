@@ -16,7 +16,7 @@ const Nav = ({ isActive, setIsActive }) => {
         },
         {
             href: "#reemplois-economie",
-            title: "Reemplois/economie"
+            title: "Réemplois/economie"
         },
         {
             href: "#conseils-accompagnement",

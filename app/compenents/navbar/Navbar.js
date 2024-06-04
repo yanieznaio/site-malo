@@ -120,13 +120,13 @@ const Navbar = () => {
                     <div className="hidden w-full md:block md:w-auto" id="navbar-multi-level">
                         <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
                             <li>
-                                <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">A propos</Link>
+                                <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Accueil</Link>
                             </li>
                             <li>
-                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Expertises</Link>
+                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Éxpertises</Link>
                             </li>
                             <li>
-                                <Link href="/actualites" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Actualites</Link>
+                                <Link href="/actualites" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Actualités</Link>
                             </li>
 
                             <li>

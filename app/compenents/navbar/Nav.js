@@ -29,7 +29,7 @@ const navItems = [
         href: "/",
     },
     {
-        title: "Expertises",
+        title: "Éxpertises",
         href: "/expertises",
     },
     ,

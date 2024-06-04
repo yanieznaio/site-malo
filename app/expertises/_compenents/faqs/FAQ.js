@@ -12,7 +12,7 @@ const FAQ = ({ faq, handleOpen, open, handleAlwaysOpen, i }) => {
                         <h3 className={`text-lg font-semibold ${open === i ? 'text-light-brown' : 'text-black'}`}>{faq.question}</h3>
                     </AccordionHeader>
                     <AccordionBody>
-                        <p className={` mt-3 text-lg text-gray-500 transition-all ease-linear`}>{faq.answer}</p>
+                        <p className={` mt-3 text-lg text-gray-500 transition-all ease-linear font-normal leading-relaxed  `}>{faq.answer}</p>
 
                         <div className={''}>
                             {
@@ -20,7 +20,8 @@ const FAQ = ({ faq, handleOpen, open, handleAlwaysOpen, i }) => {
                                     <ul className={`flex gap-4 `}>
                                         {
                                             faq.list.map((e, i) => (
-                                                <li key={i} className="flex items-center justify-center">
+                                                <li key={i} className="mt-6 text-lg flex items-center justify-center font-normal leading-relaxed text-gray-500 transition-all ease-linear font-normal leading-relaxed  `}>{faq.answer}</p>
+                                                ">
                                                     {
                                                         faq.img ? <Image src={e} width={100} height={100} alt="" /> : e
                                                     }

@@ -30,7 +30,7 @@ const BoxInfo = ({ content }) => {
                                                 <img src="/iconEnergy.png" alt="" />
                                             </div>
                                             <div className="hidden mx-3 md:block">
-                                                <span className="text-sm font-semibold">Etude thermique</span>
+                                                <span className="text-sm font-semibold">Étude thermique</span>
                                                 <span className="block text-xs text-gray-500">Des expertises adaptés a vos besoins</span>
                                             </div>
                                         </div>

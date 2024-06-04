@@ -68,7 +68,7 @@ export const prestations = [
         img: "/batiment.jpg",
         secondImage: "/daria-nepriakhina-9x9j9WvVKug-unsplash.jpg",
         white: true,
-        resume: "La RE 2020 est la nouvelle réglementation énergétique et environnementale de l’ensemble de la construction neuve. L’État, avec l’aide des acteurs du secteur, a lancé un projet inédit pour prendre en compte dans la réglementation non seulement les consommations d’énergie, mais aussi les émissions de carbone, y compris celles liées à la phase de construction du bâtiment. ",
+        resume: "La RE2020 est une réglementation essentielle pour toute nouvelle construction, apportant des bénéfices significatifs en termes d'économie d'énergie, de confort et de valorisation de votre bien. Pour garantir que votre projet de construction respecte cette norme, il est crucial de faire appel à des experts en études thermiques. En adoptant les pratiques recommandées, vous pouvez être sûr de construire une maison durable, performante et conforme aux exigences environnementales actuelles. N'hésitez pas à nous contacter pour vous accompagner dans votre projet et assurer sa réussite en conformité avec la RE2020. ",
         info: {
             color: "#F6F5F2",
             whiteText: true,
@@ -110,7 +110,7 @@ export const prestations = [
 
     {
         id: 3,
-        href: "reemplois-economie",
+        href: "réemplois-economie",
         title: "Reemploi, économie circulaire",
         color: "blue",
         description: " Vers de nouvelles pratiques dans la construction ",
@@ -224,7 +224,7 @@ export const prestations = [
         title: "Conseils et accompagnement",
         color: 'blue',
         description: "Lorem ipsum dolor sit amet consectetur.",
-        img: "/forest.jpg",
+        img: "/pickawood-ZRVSxFkbUss-unsplash.jpg",
         secondImage: "/contact2.jpg",
         white: true,
         resume: "Face à l’épuisement des ressources mondiales, l’économie circulaire est un des leviers pour réduire notre impact sur l’environnement. Dans le secteur de la construction, les enjeux sont décisifs puisqu’à lui seul, ce secteur génère 70% des déchets produits en France [ADEME]. La majorité des ressources consommées par le secteur de la construction ne sont ni locales, ni biosourcées et sont majoritairement issues des filières pétrolières ou minières. Notre objectif est de favoriser la mise en oeuvre de matériaux bio ou géo sourcés.",

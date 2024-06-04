@@ -12,7 +12,7 @@ const Actualites = () => {
 
             <div className='font-semibold text-center md:w-2/4 font-lato text-dark-brown'>
                 <h2 className='font-semibold'>
-                    Particulier, Promoteur Immobilier, Architecte, Bureau d’Etudes ou Entreprise, des expertises adaptées à vos besoins
+                    Actualités
                 </h2>
 
             </div>
