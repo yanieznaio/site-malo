@@ -27,8 +27,8 @@ const Cards = () => {
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full px-4 mb-12 border-gray-300 lg:w-1/3 lg:mb-0 lg:border-r">
                             <div className="max-w-xs pb-10 mx-auto text-center border-b border-gray-300 lg:pb-5 lg:border-b-0">
-                                <div className="flex items-center justify-center mx-auto mb-5 bg-white rounded-full w-14 h-14">
-                                    <img src="iconFile.png" alt="" />
+                                <div className="flex items-center justify-center mx-auto mb-5 w-14 h-14">
+                                    <Image src="/iconFile.png" alt="" width={56} height={56} />
                                 </div>
                                 <h4 className="text-2xl font-semibold text-gray-900">Etudes ACV/re2020</h4>
                                 <p className="text-gray-500">Obtenez votre Attestation</p>
@@ -37,7 +37,7 @@ const Cards = () => {
                         <div className="w-full px-4 mb-12 border-gray-300 lg:w-1/3 lg:mb-0 lg:border-r">
                             <div className="max-w-xs pb-10 mx-auto text-center border-b border-gray-300 lg:pb-5 lg:border-b-0">
                                 <div className="flex items-center justify-center mx-auto mb-5 bg-white rounded-full w-14 h-14">
-                                    <img src="iconEco.png" alt="" className="w-14 h-14" />
+                                    <Image src="/iconEco.png" alt="" width={56} height={56} />
                                 </div>
                                 <h4 className="text-2xl font-semibold text-gray-900">Conception Bas Carbone</h4>
                                 <p className="text-gray-500">l’avenir du bâtiment </p>
@@ -45,8 +45,8 @@ const Cards = () => {
                         </div>
                         <div className="w-full px-4 lg:w-1/3 lg:pb-5">
                             <div className="max-w-xs mx-auto text-center">
-                                <div className="flex items-center justify-center mx-auto mb-5 bg-white rounded-full w-14 h-14">
-                                    <img src="iconEnergy.png" alt="" />
+                                <div className="flex items-center justify-center mx-auto mb-5 w-14 h-14">
+                                    <Image src="/iconEnergy.png" alt="" width={56} height={56} />
                                 </div>
                                 <h4 className="text-2xl font-semibold text-gray-900">Reemplois economies circulaire</h4>
                                 <p className="text-gray-500">Solutions adaptée au défi climatique</p>
