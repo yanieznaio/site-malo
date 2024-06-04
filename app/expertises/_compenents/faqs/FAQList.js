@@ -18,7 +18,7 @@ const FAQList = ({ content }) => {
 
     const { faq } = content;
     return (
-        <section className="relative py-20 overflow-hidden bg-gray-50 transition-colors duration-[0.5s] ease-linear" style={{ backgroundColor: content.color }}>
+        <section className="relative py-20 pb-60 overflow-hidden bg-gray-50 transition-colors duration-[0.5s] ease-linear" style={{ backgroundColor: content.color }}>
 
             <div className="container relative px-4 mx-auto">
                 <div className="max-w-5xl mx-auto">
@@ -30,7 +30,7 @@ const FAQList = ({ content }) => {
 
                         </h1>
                     </div>
-                    <div className="pt-18 p-10 sm:pt-20 px-8 sm:px-20 pb-20 bg-[#F6F5F2] rounded-4xl shadow-lg rounded-xl">
+                    <div className="md:pt-18 p-10 sm:pt-20 px-10 sm:px-20  bg-[#F6F5F2] rounded-4xl shadow-lg rounded-xl">
 
                         {
                             faq.map((ele, i) => (

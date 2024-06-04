@@ -4,7 +4,7 @@ import { Accordion, AccordionBody, AccordionHeader } from '@material-tailwind/re
 const FAQ = ({ faq, handleOpen, open, handleAlwaysOpen, i }) => {
     return (
         <Accordion open={open === i} onClick={() => handleOpen(i)}>
-            <div className="flex items-start justify-between w-full pb-2 mb-2 text-left group"
+            <div className="flex items-center justify-center w-full pb-2 mb-2 text-left group"
             >
                 <div className="max-w-2xl pr-5">
 
@@ -20,7 +20,7 @@ const FAQ = ({ faq, handleOpen, open, handleAlwaysOpen, i }) => {
                                     <ul className={`flex gap-4 `}>
                                         {
                                             faq.list.map((e, i) => (
-                                                <li key={i} className="mt-6 text-lg flex items-center justify-center font-normal leading-relaxed text-gray-500 transition-all ease-linear font-normal leading-relaxed  `}>{faq.answer}</p>
+                                                <li key={i} className="mt-6 text-lg flex items-center justify-center  text-gray-500 transition-all ease-linear font-normal leading-relaxed  `}>{faq.answer}</p>
                                                 ">
                                                     {
                                                         faq.img ? <Image src={e} width={100} height={100} alt="" /> : e
