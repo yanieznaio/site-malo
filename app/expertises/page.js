@@ -21,7 +21,7 @@ const page = () => {
             <Expertise prestations={prestations} />
 
 
-            <div className='flex items-center justify-center w-full p-10'>
+            <div className='flex items-center justify-center w-full px-6 pb-10'>
                 <LittleContactbox />
             </div>
 
