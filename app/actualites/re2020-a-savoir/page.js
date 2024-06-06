@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import ShareButton from '@/app/compenents/button/ShareButton'
 const page = () => {
     return (
         <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} class="py-12 md:py-16 lg:py-24 relative">
@@ -135,11 +136,11 @@ const page = () => {
                                 <div class="flex mb-6 items-center">
                                     <img src="/logo.png" alt="" className='w-16 h-16' />
                                     <div class="ms-4">
-                                        <span class="block fw-semibold">Coté environment</span>
-                                        <span class="text-gray-400 fw-medium">Expert en Etude thermique</span>
+                                        <span class="block fw-semibold">Coté environnement</span>
+                                        <span class="text-gray-400 fw-medium">Expert en étude thermique</span>
                                     </div>
                                 </div>
-                                <div class="mb-6"><a class=" py-3 px-4 text-dark shadow rounded-full" href="#">Partager cet Article</a></div>
+                                <div class="mb-6"><ShareButton /></div>
                             </div>
                         </div>
 

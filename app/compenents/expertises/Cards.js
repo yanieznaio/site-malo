@@ -30,7 +30,7 @@ const Cards = () => {
                                 <div className="flex items-center justify-center mx-auto mb-5 w-14 h-14">
                                     <Image src="/iconFile.png" alt="" width={56} height={56} />
                                 </div>
-                                <h4 className="text-2xl font-semibold text-gray-900">Etudes ACV/re2020</h4>
+                                <h4 className="text-2xl font-semibold text-gray-900">Études ACV/RE2020</h4>
                                 <p className="text-gray-500">Obtenez votre Attestation</p>
                             </div>
                         </div>
@@ -48,8 +48,8 @@ const Cards = () => {
                                 <div className="flex items-center justify-center mx-auto mb-5 w-14 h-14">
                                     <Image src="/iconEnergy.png" alt="" width={56} height={56} />
                                 </div>
-                                <h4 className="text-2xl font-semibold text-gray-900">Reemplois economies circulaire</h4>
-                                <p className="text-gray-500">Solutions adaptée au défi climatique</p>
+                                <h4 className="text-2xl font-semibold text-gray-900">Réemplois economies circulaire</h4>
+                                <p className="text-gray-500">Solutions adaptées au défi climatique</p>
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,8 @@ import Expertise from './_compenents/Expertise'
 import { prestations } from '../data'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+
+
 const page = () => {
 
     return (
@@ -12,7 +14,7 @@ const page = () => {
 
             <section className="flex flex-col justify-center items-center h-[600px] md:h-[80vh] relative  text-center px-[2em]   "  >
 
-                <Image src={'/homeia.jpg'} unoptimized={true} fill alt='house' sizes='100vw' className='object-cover object-left md:object-top brightness-75' />
+                <Image src={'/homeia.jpg'} unoptimized={true} fill alt='house' sizes='100vw' className='object-cover object-left md:object-top brightness-75' priority placeholder='blur' blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOsa2yqBwAFCAICLICSyQAAAABJRU5ErkJggg==' />
 
 
                 <motion.h1 animate={{ y: 0 }} initial={{ y: 50 }} transition={{ type: "ease" }} className='text-[2rem] m-0 tracking-[1rem] z-10 text-[#ffff]'>NOS EXPERTISES</motion.h1>

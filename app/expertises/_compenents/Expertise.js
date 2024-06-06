@@ -135,7 +135,7 @@ const Expertise = ({ prestations }) => {
 
 
 
-                <Cta green />
+                <Cta green expertises />
 
 
             </div>

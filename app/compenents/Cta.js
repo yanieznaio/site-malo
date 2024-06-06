@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Cta = ({ green }) => {
+const Cta = ({ green, expertises }) => {
     return (
         <div className='bg-white'>
             <div className="py-24 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
@@ -20,7 +20,7 @@ const Cta = ({ green }) => {
                         <p className="mt-6 text-lg leading-8 text-gray-300">Que vous soyez Particulier, Promoteur Immobilier, Architecte, Bureau d’Etudes ou Entreprise,  différents types d’ expertises adaptées à vos besoins. </p>
                         <div className="flex items-center justify-center mt-10 gap-x-6 lg:justify-start">
                             <Link href="/contact" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Contact</Link>
-                            <Link href="/expertises" className="text-sm font-semibold leading-6 text-[#ffff]">Voir nos expetises <span aria-hidden="true">→</span></Link>
+                            <Link href={expertises ? "/actualites" : "/expertises"} className="text-sm font-semibold leading-6 text-[#ffff]">{expertises ? "Acutalités " : "Voir nos expertises "}<span aria-hidden="true">→</span></Link>
                         </div>
                     </div>
                     <div className="relative mt-16 h-80 lg:mt-8">
