@@ -123,7 +123,7 @@ const Navbar = () => {
                                 <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Accueil</Link>
                             </li>
                             <li>
-                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Éxpertises</Link>
+                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Expertises</Link>
                             </li>
                             <li>
                                 <Link href="/actualites" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Actualités</Link>
