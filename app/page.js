@@ -4,6 +4,19 @@ import Slider from './compenents/slider/Slider';
 import Actualites from './compenents/actualites/Actualites';
 import Cards from './compenents/expertises/Cards';
 import Cta from './compenents/Cta';
+export const metadata = {
+
+  title: "Bureau d'Étude Thermique - Accueil",
+  description: "Découvrez notre bureau d'étude thermique et nos services spécialisés en analyse et optimisation énergétique pour bâtiments.",
+  keywords: "bureau d'étude thermique, analyse énergétique, optimisation énergétique, performance énergétique, bâtiments",
+  canonical: "https://www.monsite.com/",
+  openGraph: {
+    title: "Bureau d'Étude Thermique - Accueil",
+    description: "Découvrez notre bureau d'étude thermique et nos services spécialisés en analyse et optimisation énergétique pour bâtiments.",
+    url: "https://www.monsite.com/",
+    type: "website"
+  }
+};
 
 const content = {
   title: "Construction, Renovation, Etes vous au normes ?",
