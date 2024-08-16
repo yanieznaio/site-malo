@@ -1,7 +1,7 @@
 
 import React from 'react'
 import HomeExpertises from './_compenents/HomeExpertises';
-
+import Head from 'next/head';
 
 export const metadata = {
 
@@ -19,9 +19,22 @@ export const metadata = {
 };
 
 const page = () => {
-
+   
     return (
-        <HomeExpertises />
+        <>
+            <Head>
+
+            <link 
+          rel="preload" 
+          href="/homeia.webp" 
+          as="image" 
+          type="image/webp" 
+          importance="high"
+        />
+            </Head>
+          <HomeExpertises />
+        </>
+      
 
     )
 }
