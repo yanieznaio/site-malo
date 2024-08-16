@@ -11,8 +11,10 @@ const HomeExpertises = () => {
 
             <section className="flex flex-col justify-center items-center h-[600px] md:h-[80vh] relative  text-center px-[2em]   "  >
 
-                <Image src={'/homeia.jpg'} fill alt='house' sizes='100vw' className='object-cover object-left md:object-top brightness-75' priority />
+             {/*    <Image src={'/homeia.webp'} fill alt='house' sizes='100vw' className='object-cover object-left md:object-top brightness-75' priority /> */}
+                <div className=' bg-cover bg-left md:bg-top brightness-75 absolute h-full w-full' style={{backgroundImage: "url('/homeia.webp')"}}>
 
+                </div>
 
                 <motion.h1 animate={{ y: 0 }} initial={{ y: 50 }} transition={{ type: "ease" }} className='text-[2rem] m-0 tracking-[1rem] z-10 text-[#ffff]'>NOS EXPERTISES</motion.h1>
                 <motion.h3 animate={{ y: 0 }} initial={{ y: 50 }} transition={{ type: "ease" }} className='text-[1rem tracking-[0.3rem] opacity-[0.8] text-[#ffff]'>Particulier, Promoteur Immobilier, Architecte, Bureau d’Etudes ou Entreprise ? Des  expertises adaptées à vos besoins.</motion.h3>

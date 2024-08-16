@@ -15,6 +15,7 @@ export const metadata = {
         url: "https://www.monsite.com/expertises",
         type: "website"
     }
+    
 };
 
 const page = () => {
