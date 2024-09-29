@@ -32,11 +32,6 @@ const navItems = [
         title: "Expertises",
         href: "/expertises",
     },
-    ,
-    {
-        title: "Actualités",
-        href: "/actualites",
-    },
 
 
     {

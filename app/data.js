@@ -1,5 +1,45 @@
 
 
+export const services = [
+    {
+        id: "1",
+        title: "Conformité re2020",
+        description:" Garantir votre projet de construction et assurer sa réussite en conformité avec la RE2020.",
+        list: ["Dossier à envoyer par mail ou courrier", "Réalisation de l'étude thermique RE2020", "Calcul du Bbio", "calcul du Dh", "Création de l'attestation thermique RE2022", "Calcul du Cep", "Calcul du Cepnr", "Calcul ACV", "Calcul du Ic energie", "Calcul du Ic construction", "Création et envoi des calculs attestation fin de travaux" ]
+    },
+    {
+        id: "2",
+        title: "Conception bas carbone",
+        description:"Le secteur de la construction prend ces dernières années un nouveau virage, pour répondre à un enjeu triple : baisser les consommations d’énergie des bâtiments, réduire les coûts liés à ces dernières et réduire l’empreinte carbone des bâtiments. En France, le bâtiment est en effet à l’origine de 23 % des émissions de gaz à effet de serre... Soit l’un des secteurs les plus émissifs du territoire Vous avez un projet de construction mais vous ne voulez pas plomber  votre bilan carbone ? C’est tout à votre honneur.  Coté environnement vous aide à y voir plus clair !",
+
+    },
+    {
+        id: "3",
+        title: "Préconisation des matériaux",
+        description:"Face à l’épuisement des ressources mondiales, l’économie circulaire est un des leviers pour réduire notre impact sur l’environnement. Dans le secteur de la construction, les enjeux sont décisifs puisqu’à lui seul, ce secteur génère 70% des déchets produits en France [ADEME]. La majorité des ressources consommées par le secteur de la construction ne sont ni locales, ni biosourcées et sont majoritairement issues des filières pétrolières ou minières. Notre objectif est de favoriser la mise en oeuvre de matériaux bio ou géo sourcés.",
+
+    },
+
+    {
+        id: "4",
+        title: "Études thermiques QEB",
+        description:" (conseil, études, calculs, contrôle réalisation)",
+        list : [
+            "Stratégie constructive en concours",
+            "Définition de l’enveloppe thermique",
+            "Analyse de Cycle de Vie",
+            "Simulation Thermique Dynamique",
+            " Facteur de Lumière du Jour",
+            " Analyse en Coût Global",
+            "Écoulement aéraulique interne et externe au bâtiment",
+            "Analyse de la Qualité de l’Air Intérieur et/ou Extérieur",
+            " Analyse critique des équipements de génie climatique",
+            " Coûts et modalités d’entretien-maintenance"
+        ]
+    },
+
+]
+
 export const prestations = [
     {
         id: 1,
@@ -8,7 +48,7 @@ export const prestations = [
         color: "#6096B4",
         description: "ACV, Reemploi, économie circulaire",
         img: '/wood.png',
-        secondImage: "/woodHome.jpg",
+        secondImage: "/researchers-looking-alternative-energy-souces.jpg",
         resume: "Le secteur de la construction prend ces dernières années un nouveau virage, pour répondre à un enjeu triple : baisser les consommations d’énergie des bâtiments, réduire les coûts liés à ces dernières et réduire l’empreinte carbone des bâtiments. En France, le bâtiment est en effet à l’origine de 23 % des émissions de gaz à effet de serre... Soit l’un des secteurs les plus émissifs du territoire Vous avez un projet de construction mais vous ne voulez pas plomber  votre bilan carbone ? C’est tout à votre honneur.  Coté environnement vous aide à y voir plus clair !",
         info: {
             color: "#F6F5F2",
@@ -62,13 +102,14 @@ export const prestations = [
     {
         id: 2,
         href: "acv-re2020",
-        title: "Etude ACV, re2020",
+        title: "Conformité re2020",
         color: "green",
         description: "votre projet conforme RE2020",
         img: "/batiment.jpg",
-        secondImage: "/daria-nepriakhina-9x9j9WvVKug-unsplash.jpg",
+        secondImage: "/side-view-man-working-eco-friendly-wind-power-project-with-paper-plans.jpg",
         white: true,
         resume: "La RE2020 est une réglementation essentielle pour toute nouvelle construction, apportant des bénéfices significatifs en termes d'économie d'énergie, de confort et de valorisation de votre bien. Pour garantir que votre projet de construction respecte cette norme, il est crucial de faire appel à des experts en études thermiques. En adoptant les pratiques recommandées, vous pouvez être sûr de construire une maison durable, performante et conforme aux exigences environnementales actuelles. N'hésitez pas à nous contacter pour vous accompagner dans votre projet et assurer sa réussite en conformité avec la RE2020. ",
+        list: ["Dossier à envoyer par mail ou courrier", "Réalisation de l'étude thermique RE2020", "Calcul du Bbio", "calcul du Dh", "Création de l'attestation thermique RE2022", "Calcul du Cep", "Calcul du Cepnr", "Calcul ACV", "Calcul du Ic energie", "Calcul du Ic construction", "Création et envoi des calculs attestation fin de travaux" ],
         info: {
             color: "#F6F5F2",
             whiteText: true,
@@ -111,10 +152,10 @@ export const prestations = [
     {
         id: 3,
         href: "reemplois-economie",
-        title: "Réemploi, économie circulaire",
+        title: "Préconisation des matériaux",
         color: "blue",
         description: " Vers de nouvelles pratiques dans la construction ",
-        img: "/house.jpg",
+        img: "/researchers-looking-alternative-energy-souces.jpg",
         secondImage: "/house2.jpg",
         white: true,
         resume: "Face à l’épuisement des ressources mondiales, l’économie circulaire est un des leviers pour réduire notre impact sur l’environnement. Dans le secteur de la construction, les enjeux sont décisifs puisqu’à lui seul, ce secteur génère 70% des déchets produits en France [ADEME]. La majorité des ressources consommées par le secteur de la construction ne sont ni locales, ni biosourcées et sont majoritairement issues des filières pétrolières ou minières. Notre objectif est de favoriser la mise en oeuvre de matériaux bio ou géo sourcés. ",
@@ -220,14 +261,26 @@ export const prestations = [
     },
     {
         id: 4,
-        href: 'conseils-accompagnement',
-        title: "Conseils et accompagnement",
+        href: 'etudes-thermiques',
+        title: "Étude thermique QEB",
         color: 'blue',
         description: "Lorem ipsum dolor sit amet consectetur.",
         img: "/pickawood-ZRVSxFkbUss-unsplash.jpg",
         secondImage: "/contact2.jpg",
         white: true,
         resume: "Face à l’épuisement des ressources mondiales, l’économie circulaire est un des leviers pour réduire notre impact sur l’environnement. Dans le secteur de la construction, les enjeux sont décisifs puisqu’à lui seul, ce secteur génère 70% des déchets produits en France [ADEME]. La majorité des ressources consommées par le secteur de la construction ne sont ni locales, ni biosourcées et sont majoritairement issues des filières pétrolières ou minières. Notre objectif est de favoriser la mise en oeuvre de matériaux bio ou géo sourcés.",
+        list : [
+            "Stratégie constructive en concours",
+            "Définition de l’enveloppe thermique",
+            "Analyse de Cycle de Vie",
+            "Simulation Thermique Dynamique",
+            " Facteur de Lumière du Jour",
+            " Analyse en Coût Global",
+            "Écoulement aéraulique interne et externe au bâtiment",
+            "Analyse de la Qualité de l’Air Intérieur et/ou Extérieur",
+            " Analyse critique des équipements de génie climatique",
+            " Coûts et modalités d’entretien-maintenance"
+        ],
         info: {
             color: "#F6F5F2",
             whiteText: true,
@@ -267,9 +320,6 @@ export const prestations = [
 
         },
     },
-
-
-
 
 
 ]

@@ -1,3 +1,4 @@
+import MiniCardLogo from '@/app/compenents/MiniCardLogo'
 import React from 'react'
 
 const BoxInfo = ({ content }) => {
@@ -11,18 +12,7 @@ const BoxInfo = ({ content }) => {
                     <div className="flex flex-wrap items-center -mx-4">
                         <div className="order-last w-full px-4 lg:w-1/2 lg:order-first">
                             <div className="relative pb-20 lg:pb-0">
-                                <div className="absolute top-0 left-0 -mt-8 md:mt-9 inline-flex p-4 bg-[#F6F5F2] rounded-3xl shadow-xl ">
-                                    <div>
-                                        <img src="/log.svg" alt="" className='w-10' />
-                                    </div>
-                                    <div className="mx-3">
-                                        <span className="font-semibold">Coté environnement</span>
-                                        <span className="block text-sm text-gray-500">Choisissez un expert pour vos aider</span>
-                                    </div>
-                                    <div className="items-start">
-
-                                    </div>
-                                </div>
+                             <MiniCardLogo pos={{top:0, left:0}}/>
                                 <div className="absolute bottom-0 right-0 max-w-xs lg:-mb-16">
                                     <div className="px-6 pt-6 pb-6 lg:pr-16 bg-[#F6F5F2] rounded-3xl shadow-xl flex flex-col">
                                         <div className="inline-flex mb-6">

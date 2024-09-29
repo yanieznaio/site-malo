@@ -12,7 +12,7 @@ const HeroBox = () => {
             <div className='text-center text-white'>
 
                 <h2 className='text-2xl md:text-[2vw] font-playfair md:leading-[2vw]' >Coté Environnement</h2>
-                <p className='w-4/5 m-auto text-xs md:text-lg opacity-80 font-mori md:leading-[19px] mt-2'>Votre guide vers un bâtiment zéro carbone </p>
+                <p className='w-4/5 m-auto text-xs md:text-lg opacity-80 font-mori md:leading-[19px] mt-2'>Votre guide vers une construction Bas carbone</p>
 
             </div>
             <hr className="h-px my-2 mt-auto bg-gray-200 border-0 opacity-40"></hr>

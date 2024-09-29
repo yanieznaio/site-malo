@@ -55,7 +55,7 @@ const Card = ({ prestation }) => {
                     EXPERTISE
                 </motion.div>
 
-                <motion.div className={`relative  h-3/4 w-full transition-all duration-300 ease-in-out brightness-50 hover:brightness-100 overflow-hidden`}>
+                <motion.div className={`relative  h-3/4 w-full transition-all duration-300 ease-in-out brightness-90 lg:brightness-50 lg:hover:brightness-100 overflow-hidden`}>
 
                     <motion.img variants={variantsImg} animate={over ? 'animate' : 'initial'} src={prestation.img} className='object-cover w-full h-full' alt={prestation.title} />
 

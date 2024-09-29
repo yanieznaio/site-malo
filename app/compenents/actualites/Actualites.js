@@ -1,4 +1,4 @@
-"use client"
+/* "use client"
 import React, { useState } from 'react'
 import CardBlog from './CardBlog'
 import LittleContactbox from './LittleContactbox'
@@ -32,4 +32,4 @@ const Actualites = () => {
     )
 }
 
-export default Actualites
+export default Actualites */

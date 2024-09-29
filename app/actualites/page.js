@@ -1,4 +1,4 @@
-
+/* 
 import React from 'react'
 import HomeActu from './_components/HomeActu';
 
@@ -23,4 +23,4 @@ const page = () => {
     )
 }
 
-export default page
+export default page */

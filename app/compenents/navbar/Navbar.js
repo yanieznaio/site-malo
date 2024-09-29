@@ -14,7 +14,7 @@ import { usePathname } from 'next/navigation';
 const navLinks = [
     { title: "Accueil", href: "/#" },
     { title: "A propos", href: "/" },
-    { title: "Expertises", href: "/expertises" },
+    { title: "Nos services", href: "/expertises" },
     { title: "Contact", href: "/contact" },
 
 ];
@@ -123,14 +123,14 @@ const Navbar = () => {
                                 <Link href="/" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Accueil</Link>
                             </li>
                             <li>
-                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Expertises</Link>
+                                <Link href="/expertises" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Nos services</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/actualites" className="block px-3 py-2 text-black rounded md:bg-transparent md:p-0 " aria-current="page">Actualités</Link>
-                            </li>
+                            </li> */}
 
                             <li>
-                                <Link href="/contact" className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">Contact</Link>
+                                <Link href="/contact" className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">Nous contacter</Link>
                             </li>
                         </ul>
                     </div>

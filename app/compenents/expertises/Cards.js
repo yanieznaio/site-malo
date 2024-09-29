@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Cards = () => {
     return (
-        <section className="relative pt-20 pb-24 overflow-hidden md:pb-20 lg:pt-32">
+        <section className="relative pt-10 pb-24 overflow-hidden md:pb-20 lg:pt-32">
 
 
             <div className="container relative px-4 mx-auto md:px-20">
@@ -56,6 +56,7 @@ const Cards = () => {
                 </div>
             </div>
         </section>
+        
     )
 }
 
