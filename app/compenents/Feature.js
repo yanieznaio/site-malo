@@ -152,7 +152,7 @@ const Accordion = () => {
           <div className="flex  items-center justify-between md:mb-8 lg:mb-0">
             <div>
               <span className="block text-xs font-medium text-gray-500 -mb-2">0{i + 1}</span>
-              <h3 className="text-xl md:text-3xl text-nowrap">{service.title}</h3>
+              <h3 className="text-xl md:text-3xl ">{service.title}</h3>
             </div>
             <div className='relative ml-auto'>
             <span className="block text-right h-6 md:h-10 transition-transform ease-in duration-300"
