@@ -154,7 +154,7 @@ const Accordion = () => {
               <span className="block text-xs font-medium text-gray-500 -mb-2">0{i + 1}</span>
               <h3 className="text-lg md:text-3xl ">{service.title}</h3>
             </div>
-            <div className='relative ml-auto'>
+            <div className='relative ml-auto flex-shrink-0'>
             <span className="block text-right h-6 md:h-10 transition-transform ease-in duration-300"
               style={{
                 transform: expandedIndex === i ? 'rotate(-90deg)' : 'rotate(0deg)',
@@ -202,7 +202,7 @@ const Accordion = () => {
               transition={{ duration: 0.3 }}
               className="mt-4 overflow-hidden"
             >
-              <p className="text-left font-semibold text-slate-800 md:max-w-[90%]">{service.description}</p>
+              <p className="text-left font-semibold text-slate-800 max-w-[90%]">{service.description}</p>
               {service.list && (
                 <ul className="mt-4 leading-loose font-mori  font-semibold text-slate-800 grid grid-cols-1 md:grid-cols-2">
                   {service.list.map((ele, i) => (
