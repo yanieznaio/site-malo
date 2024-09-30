@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 const HomeContact = () => {
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} className="min-h-screen bg-cover " style={{ backgroundImage: "url('/pickawood-ZRVSxFkbUss-unsplash.jpg')" }}>
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.76, 0, 0.24, 1] }} className="min-h-screen bg-cover " style={{ backgroundImage: "url('/services/conception-bas-carbone2.webp')" }}>
             <div className="flex flex-col min-h-screen bg-black/60">
                 <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
                     <div className="flex-1 lg:flex lg:items-center lg:-mx-6">

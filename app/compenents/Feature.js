@@ -11,7 +11,7 @@ import { PiCheckSquareOffsetThin } from "react-icons/pi";
 import { IoIosCheckmark } from "react-icons/io";
 const Feature = () => {
   return (
-    <section className="pt-28 bg-white overflow-hidden py-40 xl:px-20">
+    <section className="pt-28 bg-white overflow-hidden py-40 px-2 xl:px-20">
       <div className="mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between items-center">
           <div className="mx-auto">
@@ -57,7 +57,7 @@ const Feature = () => {
               <MiniCardLogo pos={{ top: "50px", right: "0px" }} />
             </div>
             <Image
-              src="/paysage-ville-analogique-lumiere-du-jour-batiments.png"
+              src="/features/feature1.webp"
               alt="Étude Carbone"
               width={600}
               height={500}
@@ -84,7 +84,7 @@ const Feature = () => {
           <div className="relative -mt-0 ml-auto object-cover xl:w-1/2 h-full self-start ">
             <div className='relative xl:w-full w-screen h-[400px] xl:h-[990px]'>
               <Image
-                src="/side-view-man-working-eco-friendly-wind-power-project-with-paper-plans.jpg"
+                src="/features/feature2.webp"
                 alt="Étude Carbone"
                 fill
                 className="z-20  object-cover  rounded-xl"

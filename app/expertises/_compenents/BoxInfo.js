@@ -44,7 +44,7 @@ const BoxInfo = ({ content }) => {
                                         </div>
                                     </div>
                                 </div>
-                                <img className="mx-auto" src="/nature.jpg" alt="" />
+                                <img className="mx-auto" src="/nature.webp" alt="" />
                             </div>
                         </div>
                         <div className="w-full px-4 mb-24 lg:w-1/2 lg:mb-0">

@@ -5,7 +5,7 @@ const LittleContactbox = ({ title, button }) => {
     return (
         <div className='flex flex-col h-auto max-w-xl gap-4 p-2 mt-40 md:flex-row md:h-auto md:p-4 rounded-3xl bg-lightgrey'>
             <div className='relative md:w-1/3 md:h-auto'>
-                <Image src="/contact.jpg" alt='bois' fill={true} className='object-cover rounded-xl' sizes='auto' />
+                <Image src="/contact/contact.webp" alt='bois' fill={true} className='object-cover rounded-xl' sizes='auto' />
             </div>
             <div className='flex flex-col px-4 py-6 pr-2 h-1/2 md:w-2/3 text-dark-brown '>
                 <h3 className='text-lg md:text-2xl '> {title ? title : "Vous avez besoin de conseils ?"}</h3>

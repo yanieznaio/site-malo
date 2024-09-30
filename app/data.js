@@ -47,51 +47,20 @@ export const prestations = [
         title: "Conception bas carbone",
         color: "#6096B4",
         description: "ACV, Reemploi, économie circulaire",
-        img: '/wood.png',
-        secondImage: "/researchers-looking-alternative-energy-souces.jpg",
+        img: '/services/conceptionbascarbone.webp',
+        secondImage: "/services/conception-bas-carbone2.webp",
         resume: "Le secteur de la construction prend ces dernières années un nouveau virage, pour répondre à un enjeu triple : baisser les consommations d’énergie des bâtiments, réduire les coûts liés à ces dernières et réduire l’empreinte carbone des bâtiments. En France, le bâtiment est en effet à l’origine de 23 % des émissions de gaz à effet de serre... Soit l’un des secteurs les plus émissifs du territoire Vous avez un projet de construction mais vous ne voulez pas plomber  votre bilan carbone ? C’est tout à votre honneur.  Coté environnement vous aide à y voir plus clair !",
         info: {
             color: "#F6F5F2",
 
             img: "",
             title: "Ce qu'il faut savoir",
-            faq: [
-                {
-
-                    question: " Comment réaliser votre construction bas carbone ? ",
-                    answer: (<span>Comment réaliser votre construction bas carbone ?  Pour construire bas carbone, le projet se doit d’adopter une approche plurielle. En effet, l'éco-conception, l'les matériaux utilisés ou encore l'utilisation des énergies renouvelables sont autant de paramètres à considérer.</span>),
-
-                },
-                {
-                    list: true,
-                    question: "Quels sont les Matériaux bas carbone?",
-                    subtile: "",
-                    answer: (<span>Sélectionner ses matériaux dans le cadre d’un projet de construction bas carbone ? Cette étape amène le plus souvent à se tourner vers des matériaux biosourcés et/ou recyclés.</span>),
-                    list: ["🏞️Matériaux biosourcés", "♻️Matériaux recyclés", "👷 Béton bas carbone"]
-
-                },
-
-                {
-
-                    question: "Coût : combien prévoir pour une construction bas carbone ?",
-                    answer: (<span> Le coût d'une construction bas carbone peut varier en fonction de plusieurs facteurs, tels que la taille du bâtiment, les  matériaux utilisés, les équipements et systèmes énergétiques ou les normes environnementales à respecter.</span>),
-                },
-
-                {
-                    list: true,
-                    img: true,
-                    question: "Les labels associés",
-                    answer: (<span>Qui dit construction bas carbone dit labels associés. Pour valoriser l’engagement de votre projet en France, il est  possible de présenter ce dernier à des organismes agréés et prétendre à l'obtention de labels.</span>),
-                    list: ["/carbo-labelbbca.jpeg", "/carbo-labelEC-.png", "/carbo-labelbiosource.png"]
-
-                },
-
-            ]
+          
         },
         secondInfo: {
 
 
-            img: "/nature.jpg",
+            img: "/nature.webp",
             title: "",
             subtitle: "Construction bas carbonne, une approche à adopter de toute urgence",
             texte: "La construction bas carbone, visant à réduire l'empreinte carbone des bâtiments, est donc l’approche à adopter de toute urgence pour vos projets de neuf. Combinant l'utilisation de matériaux écologiques, le principe d’efficacité énergétique et les énergies renouvelables, elle repense le bâtiment en limitant l’impact environnemental de celui-ci.",
@@ -105,8 +74,8 @@ export const prestations = [
         title: "Conformité re2020",
         color: "green",
         description: "votre projet conforme RE2020",
-        img: "/batiment.jpg",
-        secondImage: "/side-view-man-working-eco-friendly-wind-power-project-with-paper-plans.jpg",
+        img: "/services/conformite-re2020.webp",
+        secondImage: "/services/conformite-re2020-2.webp",
         white: true,
         resume: "La RE2020 est une réglementation essentielle pour toute nouvelle construction, apportant des bénéfices significatifs en termes d'économie d'énergie, de confort et de valorisation de votre bien. Pour garantir que votre projet de construction respecte cette norme, il est crucial de faire appel à des experts en études thermiques. En adoptant les pratiques recommandées, vous pouvez être sûr de construire une maison durable, performante et conforme aux exigences environnementales actuelles. N'hésitez pas à nous contacter pour vous accompagner dans votre projet et assurer sa réussite en conformité avec la RE2020. ",
         list: ["Dossier à envoyer par mail ou courrier", "Réalisation de l'étude thermique RE2020", "Calcul du Bbio", "calcul du Dh", "Création de l'attestation thermique RE2022", "Calcul du Cep", "Calcul du Cepnr", "Calcul ACV", "Calcul du Ic energie", "Calcul du Ic construction", "Création et envoi des calculs attestation fin de travaux" ],
@@ -115,32 +84,11 @@ export const prestations = [
             whiteText: true,
             img: "",
             title: "Re2020, ce qu'il faut savoir",
-            faq: [
-                {
-
-                    question: " Qui est concerne ",
-                    answer: (<span>La Re2020 concernent les maison individuelles ainsi que les logements collectifs a paritr du 1 janvier 2022 les batiments du secteur tertiare , comme les bureaux a partir du 1er juillet 2022 les constructions temporaire a partir du 1er janvier 2023, Si vous avez besoin d’une etude thermique si vous etes dans l’un de ses cas appartement agrandissement permis de constrruire</span>),
-
-                },
-                {
-                    list: true,
-                    question: "re2020 obligatoire ?",
-                    answer: (<span> Lors du depot de votre permis de construire , vous devrez etre en possession d’une attestation thermique Re2020, celle ci est obligatoire et vous impose 2 etude thermique qui doivent repondre a ces 4 indicateurs</span>),
-                    list: ["1Bhbio", "2Cep", "3cep mr", "4Dh"]
-
-                },
-
-                {
-
-                    question: "2eme obligation de la re2020",
-                    answer: (<span>L’etude ACV pour le debut des travaux Pour debuter vos travaux , cette etude est obligatoire , des verifications sur votre chantier seront mis en place pour verifier si vous avez bien fait realise une etude ACV les 2 indicateur que cette etude devra repondre sont  lc energie - lc construction</span>),
-                },
-
-            ]
+           
         },
         secondInfo: {
 
-            img: "/nature.jpg",
+            img: "/nature.webp",
             title: "",
             subtitle: "Quelles sont les sanctions en cas de non respect de la réglementation environnementale 2020",
             texte: "Il est tres important de comprendre que Des sanctions vous seront , pour eviter cela faites imperativement ces deux etudes , La réglementation environnementale RE2020 doit être parfaitement appliquée par le maître d’oeuvre. **Le non-respect des règles de construction représente un délit passible de sanctions pénales**. Ces dernières peuvent atteindre la somme de 45 000€, qui peut être complétée de 6 mois d’emprisonnement en cas de récidive.",
@@ -155,8 +103,8 @@ export const prestations = [
         title: "Préconisation des matériaux",
         color: "blue",
         description: " Vers de nouvelles pratiques dans la construction ",
-        img: "/researchers-looking-alternative-energy-souces.jpg",
-        secondImage: "/house2.jpg",
+        img: "/services/preconisation-des-materiaux.webp",
+        secondImage: "/services/bureau-etude-batiments.webp",
         white: true,
         resume: "Face à l’épuisement des ressources mondiales, l’économie circulaire est un des leviers pour réduire notre impact sur l’environnement. Dans le secteur de la construction, les enjeux sont décisifs puisqu’à lui seul, ce secteur génère 70% des déchets produits en France [ADEME]. La majorité des ressources consommées par le secteur de la construction ne sont ni locales, ni biosourcées et sont majoritairement issues des filières pétrolières ou minières. Notre objectif est de favoriser la mise en oeuvre de matériaux bio ou géo sourcés. ",
         info: {
@@ -251,7 +199,7 @@ export const prestations = [
         },
         secondInfo: {
 
-            img: "/nature.jpg",
+            img: "/nature.webp",
             title: "",
             subtitle: "Envisager différemment le cycle de vie des matériaux",
             texte: "Parmi les causes du dérèglement climatique, on trouve la surconsommation des ressources et un gaspillage presque institutionnalisé. L’économie circulaire se propose de revoir en profondeur nos modes de fonctionnement afin de parvenir à une gestion sobre et efficace de nos ressources. ",
@@ -265,7 +213,7 @@ export const prestations = [
         title: "Étude thermique QEB",
         color: 'blue',
         description: "Lorem ipsum dolor sit amet consectetur.",
-        img: "/pickawood-ZRVSxFkbUss-unsplash.jpg",
+        img: "/services/etude-thermique.webp",
         secondImage: "/contact2.jpg",
         white: true,
         resume: "Face à l’épuisement des ressources mondiales, l’économie circulaire est un des leviers pour réduire notre impact sur l’environnement. Dans le secteur de la construction, les enjeux sont décisifs puisqu’à lui seul, ce secteur génère 70% des déchets produits en France [ADEME]. La majorité des ressources consommées par le secteur de la construction ne sont ni locales, ni biosourcées et sont majoritairement issues des filières pétrolières ou minières. Notre objectif est de favoriser la mise en oeuvre de matériaux bio ou géo sourcés.",
@@ -310,7 +258,7 @@ export const prestations = [
         },
         secondInfo: {
 
-            img: "/nature.jpg",
+            img: "/nature.webp",
             title: "",
             subtitle: "Quelles sont les sanctions en cas de non respect de la réglementation environnementale 2020",
             texte: "Il est tres important de comprendre que Des sanctions vous seront , pour eviter cela faites imperativement ces deux etudes , La réglementation environnementale RE2020 doit être parfaitement appliquée par le maître d’oeuvre. **Le non-respect des règles de construction représente un délit passible de sanctions pénales**. Ces dernières peuvent atteindre la somme de 45 000€, qui peut être complétée de 6 mois d’emprisonnement en cas de récidive.",

@@ -1,10 +1,7 @@
 "use client"
-import Info from '@/app/compenents/Info'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Nav from './Nav'
-import Cta from '@/app/compenents/Cta'
-import FAQList from './faqs/FAQList'
 import BoxInfo from './BoxInfo'
 import Client from '@/app/compenents/Client'
 import { FaCheck } from 'react-icons/fa'

@@ -89,10 +89,10 @@ const titleOpacity = useTransform(
 
 )
 const images = [
-  {img: "/building.jpg", title: "Batiment collectif", color:"#B7E0FF", style:{  bottom:0, right:"-10px", opacity:titleOpacity}},
-  {img: "/ronnie-george-9gGvNWBeOq4-unsplash.jpg", title: "Maison individuelle", style:{ bottom:0, left:0, opacity:titleOpacity}},
-  {img:  "/plant-green-city-amazing-skyscraper.jpg", title: "Bureau", style:{top:0, left:0, opacity:titleOpacity}},
-  {img: "/prestation1.jpg", title: "Apartement", style:{ top:0, left:0, opacity:titleOpacity}}
+  {img: "/clients/batiment-collectif.webp", title: "Batiment collectif", color:"#B7E0FF", style:{  bottom:0, right:"-10px", opacity:titleOpacity}},
+  {img: "/clients/maison-individuelle.webp", title: "Maison individuelle", style:{ bottom:0, left:0, opacity:titleOpacity}},
+  {img:  "/clients/bureau.webp", title: "Bureau", style:{top:0, left:0, opacity:titleOpacity}},
+  {img: "/clients/appartement.webp", title: "Apartement", style:{ top:0, left:0, opacity:titleOpacity}}
 ]
 
 
