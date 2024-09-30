@@ -202,7 +202,7 @@ const Accordion = () => {
               transition={{ duration: 0.3 }}
               className="mt-4 overflow-hidden"
             >
-              <p className="text-left font-semibold text-slate-800 max-w-[90%]">{service.description}</p>
+              <p className="text-left font-semibold text-slate-800 md:max-w-[90%]">{service.description}</p>
               {service.list && (
                 <ul className="mt-4 leading-loose font-mori  font-semibold text-slate-800 grid grid-cols-1 md:grid-cols-2">
                   {service.list.map((ele, i) => (
