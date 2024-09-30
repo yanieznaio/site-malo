@@ -155,14 +155,14 @@ const Accordion = () => {
               <h3 className="text-lg md:text-3xl ">{service.title}</h3>
             </div>
             <div className='relative ml-auto flex-shrink-0'>
-            <span className="block text-right h-6 md:h-10 transition-transform ease-in duration-300"
+            <span className="block  h-6 md:h-10 transition-transform ease-in duration-300"
               style={{
                 transform: expandedIndex === i ? 'rotate(-90deg)' : 'rotate(0deg)',
               }}
             >
               <svg
-                width="100%"
-                height="100%"
+                width="33"
+                height="33"
                 viewBox="0 0 33 33"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
