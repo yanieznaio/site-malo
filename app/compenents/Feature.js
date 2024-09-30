@@ -155,7 +155,7 @@ const Accordion = () => {
               <h3 className="text-xl md:text-3xl text-nowrap">{service.title}</h3>
             </div>
             <div className='ml-auto'>
-            <span className="text-right h-6 md:h-10 transition-transform ease-in duration-300"
+            <span className="block text-right h-6 md:h-10 transition-transform ease-in duration-300"
               style={{
                 transform: expandedIndex === i ? 'rotate(-90deg)' : 'rotate(0deg)',
               }}
