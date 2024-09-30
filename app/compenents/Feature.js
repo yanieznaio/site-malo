@@ -149,7 +149,7 @@ const Accordion = () => {
           onClick={() => setExpandedIndex(expandedIndex === i ? null : i)}
           className="group cursor-pointer w-full  mx-auto md:mb-10 py-6 px-2 md:pb-8 flex flex-col relative border-b border-black"
         >
-          <div className="flex relative w-full items-center justify-between md:mb-8 lg:mb-0">
+          <div className="flex relative w-screen md:w-full items-center justify-between md:mb-8 lg:mb-0">
             <div>
               <span className="block text-xs font-medium text-gray-500 -mb-2">0{i + 1}</span>
               <h3 className="text-xl md:text-3xl text-nowrap">{service.title}</h3>
