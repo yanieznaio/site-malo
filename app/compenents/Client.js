@@ -66,7 +66,7 @@ const Client = () => {
     const textScale = useSpring(useTransform(scrollYProgress, [0.7, 1], [0.7, 1]), springConfig);
 
     const titleOpacity = useSpring(
-        useTransform(scrollYProgress, [0.7, 1], [0, 1]),
+        useTransform(scrollYProgress, [0.8, 1], [0, 1]),
         springConfig
     );
 
