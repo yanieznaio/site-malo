@@ -32,10 +32,10 @@ const Nav = ({ isActive, setIsActive }) => {
 
             {
                 elements.map((ele, i) => (
-                    <>
-                        <Link key={i} className="hidden md:flex py-4 md:py-0  justify-center items-center flex-1 text-[#000] tracking-[0.1rem] transition-all duration-[0.2s] ease-in text-[0.8rem] hover:text-[#ffff] hover:bg-dark-brown hover:transition-all hover:duration-[0.2s] hover:ease-in" href={ele.href} onClick={() => setIsActive(i)} scroll={false}>{ele.title}</Link>
-                        <Link key={i} className="flex md:hidden py-4 md:py-0  justify-center items-center flex-1 text-[#000] tracking-[0.1rem] transition-all duration-[0.2s] ease-in text-[0.8rem] hover:text-[#ffff] hover:bg-dark-brown hover:transition-all hover:duration-[0.2s] hover:ease-in" href={ele.href} onClick={() => setIsActive(i)} scroll={false}>{ele.title}</Link>
-                    </>
+                    <div key={i}>
+                        <Link className="hidden md:flex py-4 md:py-0  justify-center items-center flex-1 text-[#000] tracking-[0.1rem] transition-all duration-[0.2s] ease-in text-[0.8rem] hover:text-[#ffff] hover:bg-dark-brown hover:transition-all hover:duration-[0.2s] hover:ease-in" href={ele.href} onClick={() => setIsActive(i)} scroll={false}>{ele.title}</Link>
+                        <Link  className="flex md:hidden py-4 md:py-0  justify-center items-center flex-1 text-[#000] tracking-[0.1rem] transition-all duration-[0.2s] ease-in text-[0.8rem] hover:text-[#ffff] hover:bg-dark-brown hover:transition-all hover:duration-[0.2s] hover:ease-in" href={ele.href} onClick={() => setIsActive(i)} scroll={false}>{ele.title}</Link>
+                    </div>
 
                 ))
             }

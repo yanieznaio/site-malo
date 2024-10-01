@@ -12,7 +12,10 @@ const HomeExpertises = () => {
             <section className="flex flex-col justify-center items-center h-[600px] md:h-[80vh] relative  text-center px-[2em]   "  >
 
              {/*    <Image src={'/homeia.webp'} fill alt='house' sizes='100vw' className='object-cover object-left md:object-top brightness-75' priority /> */}
-                <div className=' bg-cover bg-left md:bg-top brightness-75 absolute h-full w-full' style={{backgroundImage: "url('/hero/homeia.webp')"}}>
+                <div className=' bg-cover bg-top brightness-75 hidden md:block absolute h-full w-full' style={{backgroundImage: "url('/hero/homeia.webp')"}}>
+
+                </div>
+                <div className='bg-cover bg-left  brightness-75 absolute block md:hidden h-full w-full' style={{backgroundImage: "url('/hero/homeia-mobile.webp')"}}>
 
                 </div>
 

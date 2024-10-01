@@ -11,11 +11,9 @@ import { PiCheckSquareOffsetThin } from "react-icons/pi";
 import { IoIosCheckmark } from "react-icons/io";
 const Feature = () => {
   return (
-    <section className="pt-28 bg-white overflow-hidden py-40 px-2 xl:px-20">
+    <section className="pt-28 bg-white overflow-hidden py-40  xl:px-20">
       <div className="mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between items-center">
-          <div className="mx-auto">
-            <div className="max-w-md mx-auto lg:max-w-2xl lg:mx-0">
+      <div className="max-w-md mx-auto md:max-w-xl text-center   ">
               <h1 className="mb-8 text-5xl font-bold text-gray-900 font-heading xs:text-6xl md:text-7xl">
                 <span>Collaborer avec notre bureau</span>
                 <span className="font-serif italic"> d'études</span>
@@ -24,7 +22,10 @@ const Feature = () => {
                 Faites-vous accompagner par un expert en études thermiques et enrénovation, construction durable
               </p>
             </div>
-            <div className="space-y-8 max-w-sm lg:max-w-md mt-10 mx-auto md:mx-0 z-30 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:z-10 gap-8 justify-between items-center">
+          <div className="mx-auto">
+       
+            <div className="space-y-8 md:space-y-0  grid grid-cols-1 md:grid-cols-2 md:self-start lg:grid-cols-1 max-w-sm md:max-w-3xl lg:max-w-md mt-10 mx-auto md:mx-0 z-30 relative">
               <ServiceLink
                 title="Études de Bâtiment"
                 icon={<BsBuildings size={20} />}
@@ -52,23 +53,28 @@ const Feature = () => {
             </div>
           </div>
 
-          <div className="self-end relative mt-20 md:mt-0">
-            <div className="bg-blue-400 w-[300px] md:w-[40vw] h-[500px] md:h-[800px] rounded-full absolute bottom-0 right-0 z-10">
-              <MiniCardLogo pos={{ top: "50px", right: "0px" }} />
+          <div className="self-end relative mt-20 md:mt-40 ">
+            <div className="bg-blue-400 w-[300px] md:w-[50vw] lg:w-[40vw] h-[500px]  md:h-[800px] rounded-full absolute bottom-0 right-0 z-10">
+              <MiniCardLogo pos={{ top: "30px", right: "0px" }} />
             </div>
+            <div className='relative w-screen lg:w-full h-[400px] md:h-[660px]  lg:h-[660px] z-20 lg:mt-0 flex items-center'>
             <Image
               src="/features/feature1.webp"
               alt="Étude Carbone"
-              width={600}
-              height={500}
-              className="z-20 object-cover relative h-[450px] md:h-[500px] rounded-xl"
+              fill
+              sizes="(max-width: 640px) 100vw, 
+              (max-width: 768px) 50vw, 
+              (max-width: 1024px) 40vw, 
+              33vw" // Define sizes for different breakpoints
+              className=" object-cover rounded-xl" // added w-auto to maintain the aspect ratio
             />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Second Section */}
-      <div className="mx-auto mt-0 md:mt-40 overflow-hidden bg-neutral-100 rounded-xl  md:pr-4 ">
+      <div className="mx-auto lg:mt-40 overflow-hidden bg-neutral-100 rounded-xl  md:pr-4 ">
         <div className="h-full grid grid-cols-1 xl:flex md:flex-row-reverse gap-8 justify-between items-center">
           <div className="xl:w-2/3">
             <section className="relative">
@@ -83,12 +89,17 @@ const Feature = () => {
 
           <div className="relative -mt-0 ml-auto object-cover xl:w-1/2 h-full self-start ">
             <div className='relative xl:w-full w-screen h-[400px] xl:h-[990px]'>
-              <Image
-                src="/features/feature2.webp"
-                alt="Étude Carbone"
-                fill
-                className="z-20  object-cover  rounded-xl"
-              />
+            <Image
+              src="/features/feature2.webp"
+              alt="Étude Carbone"
+              fill
+              className="z-20 object-cover rounded-xl"
+              style={{ objectFit: "cover" }}
+              sizes="(max-width: 640px) 100vw, 
+                    (max-width: 768px) 50vw, 
+                    (max-width: 1024px) 40vw, 
+                    33vw" // Define sizes for different breakpoints
+            />
             </div>
           </div>
         </div>

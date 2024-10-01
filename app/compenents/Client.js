@@ -71,15 +71,15 @@ const Client = () => {
     );
 
     const images = [
-        { img: "/clients/batiment-collectif.webp", title: "Batiment collectif", style: { bottom: 0, right: "-10px", opacity: titleOpacity } },
-        { img: "/clients/maison-individuelle.webp", title: "Maison individuelle", style: { bottom: 0, left: 0, opacity: titleOpacity } },
-        { img: "/clients/bureau.webp", title: "Bureau", style: { top: 0, left: 0, opacity: titleOpacity } },
-        { img: "/clients/appartement.webp", title: "Appartement", style: { top: 0, left: 0, opacity: titleOpacity } }
+        { img: "/clients/batiment-collectif-mobile.webp", title: "Batiment collectif", style: { bottom: 0, right: "-10px", opacity: titleOpacity } },
+        { img: "/clients/maison-individuelle-mobile.webp", title: "Maison individuelle", style: { bottom: 0, left: 0, opacity: titleOpacity } },
+        { img: "/clients/bureau-mobile.webp", title: "Bureau", style: { top: 0, left: 0, opacity: titleOpacity } },
+        { img: "/clients/appartement-mobile.webp", title: "Appartement", style: { top: 0, left: 0, opacity: titleOpacity } }
     ];
 
     return (
-        <div ref={container} className='bg-white w-full flex justify-center items-center md:h-[200dvh] h-[1200px] relative'>
-            <div className='overflow-hidden sticky top-0 bg-white h-screen w-full flex justify-center items-center -mt-[500px]'>
+        <div ref={container} className='relative bg-white w-full flex justify-center items-center md:h-[200dvh] h-[1200px]'>
+            <div className='overflow-hidden sticky  top-0 bg-white h-screen w-full flex justify-center items-center -mt-[500px]'>
                 <div className='w-full h-full top-0 absolute flex items-center justify-center'>
                     {images.map((img, i) => (
                         <motion.div
@@ -95,7 +95,16 @@ const Client = () => {
                                 >
                                     {img.title}
                                 </motion.div>
-                                <Image src={img.img} alt='image' fill className='rounded-[50px] object-cover shadow-sm' />
+                                <Image 
+                                    src={img.img} 
+                                    alt="image" 
+                                    fill 
+                                    className='rounded-[50px] object-cover shadow-sm'
+                                    sizes="(max-width: 640px) 100vw, 
+                                           (max-width: 768px) 50vw, 
+                                           (max-width: 1024px) 33vw, 
+                                           25vw"
+                                />
                             </div>
                         </motion.div>
                     ))}
@@ -114,6 +123,7 @@ const Client = () => {
             </div>
         </div>
     );
+    
 };
 
 export default Client;

@@ -10,8 +10,8 @@ const Hero = () => {
 
 
             <div className='relative w-full mt-auto md:ml-auto h-1/2 md:w-1/2 md:h-full brightness-75 md:brightness-100'>
-                <Image fill={true} sizes='auto' src='/hero/hero.webp' quality={100} priority className='' alt='Photo de maison' style={{ objectFit: "cover", objectPosition: "left" }} />
-
+                <Image fill={true} sizes='auto' src='/hero/hero.webp' quality={100} priority className='hidden lg:block' alt='Photo de maison' style={{ objectFit: "cover", objectPosition: "left" }} />
+                <Image fill={true} sizes='auto' src='/hero/hero-mobile.webp' quality={100} priority className='block lg:hidden' alt='Photo de maison' style={{ objectFit: "cover", objectPosition: "left" }} />
             </div>
 
             <HeroBox />

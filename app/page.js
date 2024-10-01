@@ -26,8 +26,9 @@ export default function Home() {
     <main className="relative w-full bg-white">
       <Hero />
       <Feature/>
-      <Client/>
       <Cta/>
+      <Client/>
+
       <Slider />
       <HomeContact/>
     </main>
