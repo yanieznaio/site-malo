@@ -32,7 +32,7 @@ const Card = ({ prestation }) => {
                 duration: 0.6,
                 ease: [0.25, 0.1, 0.25, 1], // Adjusted cubic-bezier for smoother animation
             }}
-           
+           viewport={{once: true}}
           // Trigger the animation when 30% of the card is visible
             onMouseOver={() => setOver(true)}
             onMouseLeave={() => setOver(false)}
